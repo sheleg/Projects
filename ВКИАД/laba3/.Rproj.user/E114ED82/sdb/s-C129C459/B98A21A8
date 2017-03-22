@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "randRunif = runif(100, 0, 200)\nhistRinif = hist(randRunif, 25)\nmeanRandRunif = mean(randRunif)\nvarRandRunif = var(randRunif)\n",
+    "created" : 1481785434019.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1384864061",
+    "id" : "B98A21A8",
+    "lastKnownWriteTime" : 1481785165,
+    "last_content_update" : 1481785165,
+    "path" : "~/Documents/R/laba3/lab3b.r",
+    "project_path" : "lab3b.r",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "data(\"votes.repub\")\nplot(agnes(votes.repub))\n",
+    "created" : 1481789553240.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4129341010",
+    "id" : "F0C24936",
+    "lastKnownWriteTime" : 1481789596,
+    "last_content_update" : 1481789596402,
+    "path" : "~/Documents/R/laba4/ScriptB.R",
+    "project_path" : "ScriptB.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

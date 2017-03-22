@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "plane <- function(vec){\n  i <- 1\n  xCoord <- rep(0, 1)\n  yCoord <- rep(0, 1)\n  \n  lambda <- 0\n  if (length(vec) %% 2 == 1) {\n    lambda <- 1\n  }\n    \n  while(i <= length(vec) - lambda) {\n    if((i %% 2) == 1)\n      xCoord <- append(xCoord, vec[i])\n    else\n      yCoord <- append(yCoord, vec[i])\n    i <- i + 1\n  }\n  return(list(\"x\" = xCoord, \"y\" = yCoord))\n}\n  \nplane1 = plane(random1)\nplane2 = plane(random2)\nplane3 = plane(random3)\nplane6 = plane(random6)\nplaneRunif = plane(randRunif)\n\n\nplot(plane1)\nplot(plane2)\nplot(plane3)\nplot(plane6)\nplot(planeRunif)",
+    "created" : 1481785459078.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2085162037",
+    "id" : "73E2D6B6",
+    "lastKnownWriteTime" : 1481785539,
+    "last_content_update" : 1481785539063,
+    "path" : "~/Documents/R/laba3/lab3c.r",
+    "project_path" : "lab3c.r",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

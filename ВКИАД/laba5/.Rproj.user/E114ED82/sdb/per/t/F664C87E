@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "m,b,c,s\nm,b,c,a,j,s\nm,a,j,v,p,s\nm,b,c,s\nm,b,s\nm\nm,b,p,s\nm,b,c,a\nv,p,s\nm,b,c\nm,b\nm,b,c,a\nm,b,c,a,s\nb,c,a,j,v,p,s\nm,b,c,a,j,v,p,s\nb,c,a,j,v,p,s\nb,c,a,j,v,p,s\nm,v,p,s\nm,b,c,a,j,v,p,s\nm,b,c,a,s\na\nm,j,v,p,s\nm,b,c,a,j,v,p,s\nm,b,p,s\nb,c,a,j,v,p,s\nb\nb,c,a,j,v,p,s\nm,j,v,p,s\nm,s\nm,b,a,j,v,p,s\nc,a,j,v,p\nm,b,s\nm,c,a,j,v\nm,b,c,j,v\nm,c,a,j,p,s\nm,b,c,j,v,p,s\nm,a,j,v,p,s\nm,b,a,j,v,p\nm,b,a,j,v,s\nm,a,j,v,s\nm,b,c,v,p,s\n",
+    "created" : 1481639919827.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2348162851",
+    "id" : "F664C87E",
+    "lastKnownWriteTime" : 1481640993,
+    "last_content_update" : 1481640993029,
+    "path" : "~/Documents/R/laba5/data",
+    "project_path" : "data",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

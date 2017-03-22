@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "install.packages(\"arules\")\nlibrary(arules)\n\ntransaction = read.transactions(\"data\", format = \"basket\", sep = \",\")\n\ninspect(transaction)\nimage(transaction)\nitemFrequencyPlot(transaction, support = 0.1)\n\n\nrules <- apriori(transaction, parameter= list(supp=0.5, conf=0.5))\n",
+    "created" : 1481789150265.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "850113717",
+    "id" : "C38C2422",
+    "lastKnownWriteTime" : 1481797053,
+    "last_content_update" : 1481797053446,
+    "path" : "~/Documents/R/laba5/Script.R",
+    "project_path" : "Script.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

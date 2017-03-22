@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "table = read.table(\"data\")\nlibrary(cluster)\ncll <- clara(table,8)\nplot(table, col = cll$clustering, xlab = \"x\", ylab = \"y\")\n\n",
+    "created" : 1481789534843.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4217238399",
+    "id" : "A402A0E5",
+    "lastKnownWriteTime" : 1481789600,
+    "last_content_update" : 1481789600320,
+    "path" : "~/Documents/R/laba4/ScriptA.R",
+    "project_path" : "ScriptA.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

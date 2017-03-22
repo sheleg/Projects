@@ -1,0 +1,74 @@
+unit AbsBall;
+
+interface
+
+uses
+  Classes, Graphics;
+
+type
+  // јбстрактный класс, используетс€ в качестве базового дл€ имитации
+  // движени€ шарика. ¬ этом классе собрана вс€ функциональность,
+  // св€занна€ с пересчЄтом координат и перерисовкой шарика в отдельном
+  // потоке. ѕотомки должны лишь переопределить методы ShowBall и HideBall,
+  // которые содержат код, св€занный с рисованием / стиранием графического
+  // представлени€ шарика.
+  TAbstractBallThread = class(TThread)
+  private
+    fCanvas: TCanvas;
+    x, y, dx, dy: integer;
+  protected
+    procedure ShowBall; virtual; abstract;
+    procedure HideBall; virtual; abstract;
+    property Canvas: TCanvas read fCanvas;
+    property CurrentX: integer read x;
+    property CurrentY: integer read y;
+    procedure DoStep;
+    procedure Execute; override;
+  public
+    constructor Create(aCanvas: TCanvas);
+  end;
+
+implementation
+
+uses SysUtils;
+
+{ TRedBallThread }
+
+constructor TAbstractBallThread.Create(aCanvas: TCanvas);
+begin
+  inherited Create(true);
+  FreeOnTerminate := false;   // ƒеструкторы вызываютс€ в TForm1.FormDestroy
+  fCanvas := aCanvas;
+  Randomize;
+  x := Random(500);
+  y := Random(300);
+  dx := Random(2) * 2 - 1;
+  dy := Random(2) * 2 - 1;
+end;
+
+procedure TAbstractBallThread.DoStep;
+begin
+  Synchronize(HideBall);
+  x := x + dx;
+  y := y + dy;
+  // ѕри большом количестве потоков будет видно дл€ чего нужно Synchronize()
+  Synchronize(ShowBall);
+  // ShowBall;
+  if (x < 2) or (x > 498) then dx := -dx;
+  if (y < 2) or (y > 298) then dy := -dy;
+end;
+
+// "—тандартный" способ организации работы потока: поток выполн€ет свою собственную
+// работу (DoStep), затем "засыпает" (дава€ тем самым возможность выполнить определЄнную
+// работу другим потокам). ¬есь процесс повтор€етс€, пока флаг Terminated имеет значение
+// false. ≈сли Terminated = true, то поток добровольно(!!!) завершаетс€.
+procedure TAbstractBallThread.Execute;
+begin
+  while not Terminated do begin
+    DoStep;
+    Sleep(25);
+  end;
+end;
+
+end.
+

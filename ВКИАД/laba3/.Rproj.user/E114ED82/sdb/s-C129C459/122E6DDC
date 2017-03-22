@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "rand <- function(m, a, c, max, n){\n  res <- rep(0, 1)\n  temp <- sample(1:m, 1)\n  \n  res[1] <- ((a*temp + c) %% m) %% max\n  \n  i <- 2\n  while (i <= n) {\n    res[i] <- ((a*res[i - 1] + c) %% m) %% max\n    \n    for(j in 1:(i - 1)) {\n      if (res[j] == res[i]) { \n        return (res);\n      }\n    }\n    \n    i <- i + 1\n  }\n  return (res)\n}\n\n                #max - 4\nrandom1 <- rand(7, 2, 4, 7, 1000)\nrandom2 <- rand(125, 6, 17, 125, 1000)\nrandom3 <- rand(2^15 - 1, 1664525, 1013904223, 1000, 1000)\n#random4 <- rand(2^31 - 1, 48271, 0, 10000, 1000)\n#random5 <- rand(2^32 - 1, 253801, 14519, 10000, 1000)\nrandom6 <- rand(2^20, 3453, 2324323, 4000, 1000)\n\nhist1 <- hist(random1, 25)\nhist2 <- hist(random2, 25)\nhist3 <- hist(random3, 25)\n#hist4 <- hist(random4, 25)\n#hist5 <- hist(random5, 25)\nhist6 <- hist(random6, 25)\n\nvar1 <- var(random1)\nvar2 <- var(random2)\nvar3 <- var(random3)\n#var4 <- var(random4)\n#var5 <- var(random5)\nvar6 <- var(random6)\n\nmean1 <- mean(random1)\nmean2 <- mean(random2)\nmean3 <- mean(random3)\n#mean4 <- mean(random4)\n#mean5 <- mean(random5)\nmean6 <- mean(random6)",
+    "created" : 1481785254212.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2514830377",
+    "id" : "122E6DDC",
+    "lastKnownWriteTime" : 1481785422,
+    "last_content_update" : 1481785422397,
+    "path" : "~/Documents/R/laba3/lab3a.r",
+    "project_path" : "lab3a.r",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
