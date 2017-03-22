@@ -142,6 +142,7 @@ struct Pentagon {
             && checkPoint.y == vertices[n - 1]->y)
             return 1;//если точка в вершине
 
+
         if (b == true) {
             return 1;
         }
@@ -166,8 +167,8 @@ int noSolution = 0;
 double MIN_TIME = INT_MAX;
 double MAX_TIME = INT_MIN;
 
-int *threadSolution;
-float *threadTime;
+// int *threadSolution;
+// float *threadTime;
 
 unsigned long uThrID;
 
@@ -176,8 +177,10 @@ string outputFile = "output.txt";
 
 vector<Pentagon *> parametrs;
 vector<int> answers;
+vector<int> threadSolution;
+vector<float> threadTime;
 
-CRITICAL_SECTION cs;
+CRITICAL_SECTION cs, timeCS, answerCS, taskCS;
 HANDLE hThr;
 
 void Thread(void *pParams);
@@ -196,24 +199,35 @@ int main() {
 
     parametrs = getRandomParametr();
     answers.resize(TaskCount, 0);
-    threadSolution = new int[ThreadCount];
-    threadTime = new float[ThreadCount];
-    for (int i = 0; i < ThreadCount; i++) {
-        threadSolution[i] = 0;
-        threadTime[i] = 0;
-    }
+    threadSolution.resize(ThreadCount, 0);
+    threadTime.resize(ThreadCount, 0);
+
 
     InitializeCriticalSection(&cs);
+    InitializeCriticalSection(&timeCS);
+    InitializeCriticalSection(&answerCS);
+    InitializeCriticalSection(&taskCS);
+
     HANDLE *arrayThread = new HANDLE[ThreadCount];
     unsigned long *threadID = new unsigned long[ThreadCount]{};
 
-    for (int i = 0; i < ThreadCount; i++) {
-        arrayThread[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE) Thread, (void *) &i, 0, &threadID[i]);
-        if (NULL == arrayThread[i]) {
-            std::cout << "Error in create thread № " << i << "\n";
+    // try {
+        for (int i = 0; i < ThreadCount; i++) {
+            arrayThread[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE) Thread, (void *) &i, 0, &threadID[i]);
+            if (NULL == arrayThread[i]) {
+                throw "Error in create thread";
+            }
         }
+    // }
+    // catch(const char* err) {
+    //     cout << err << endl;
+    // }
+
+    if (WaitForMultipleObjects(ThreadCount, arrayThread, TRUE, INFINITE) == WAIT_FAILED) {
+        cout << "ERROR\n";
+        cout << GetLastError() << endl;
+        return 0;
     }
-    WaitForMultipleObjects(ThreadCount, arrayThread, TRUE, INFINITE);
 
     for (int i = 0; i < ThreadCount; i++) {
         CloseHandle(arrayThread[i]);
@@ -235,29 +249,38 @@ int main() {
     ElapsedMicroseconds.QuadPart *= 1000000;
     ElapsedMicroseconds.QuadPart /= Frequency.QuadPart;
 
-    cout << "\nTime taken to write data to a file (nanoseconds): " << ElapsedMicroseconds.QuadPart << endl;
-
-    cout << correctDecision << " tasks successfully solved\n";
-    cout << errorInDecision << " tasks isn't solved due to an error in the calculation process\n";
-    cout << noSolution << " tasks don't have a solution\n\n";
+    // cout << "\nTime taken to write data to a file (nanoseconds): " << ElapsedMicroseconds.QuadPart << endl;
+    //
+    // cout << correctDecision << " tasks successfully solved\n";
+    // cout << errorInDecision << " tasks isn't solved due to an error in the calculation process\n";
+    // cout << noSolution << " tasks don't have a solution\n\n";
     for (int i = 0; i < ThreadCount; i++) {//вывод поток - кол-во задач
         cout << "Thread " << i + 1 << " solved " << threadSolution[i] << " tasks\n";
     }
 
-    cout << "\nMinimum time to resolve: " << MIN_TIME << endl;
-    cout << "Maximum time to resolve: " << MAX_TIME << endl << endl;
+    // cout << "Minimum time to resolve: " << MIN_TIME << endl;
+    // cout << "Maximum time to resolve: " << MAX_TIME << endl << endl;
 
     for (int i = 0; i < ThreadCount; i++) {
         cout << "Thread " << i + 1 << " spent " << threadTime[i] << " milliseconds solving " << threadSolution[i]
              << " tasks" << endl;
     }
+    //
+    // for (int i = 0; i < ThreadCount; i++) {
+    //     cout << threadSolution[i]  << endl;
+    // }
+    //
+    // cout << "\n\n\n\n\n";
+    // for (int i = 0; i < ThreadCount; i++) {
+    //     cout << threadSolution[i] << endl;
+    // }
 
     delete[] threadID;
     delete[] arrayThread;
-    delete[] threadSolution;
-    delete[] threadTime;
-    fout.close();
+    // delete[] threadSolution;
+    // delete[] threadTime;
 
+    fout.close();
     return 0;
 }
 
@@ -277,12 +300,17 @@ void Thread(void *pParams) {
         pentagon = parametrs[currentTaskThread];
         checkTime = checkPoint(pentagon, currentTaskThread);
         threadTime[number] += checkTime;
-        ++threadSolution[number];
+        threadSolution[number]++;
 
         EnterCriticalSection(&cs);
+        //cout << number << endl;
         currentTaskThread = currentTask++;
         LeaveCriticalSection(&cs);
     }
+
+    EnterCriticalSection(&cs);
+    cout << "Thread " << number << " stoped\n";
+    LeaveCriticalSection(&cs);
 }
 
 float checkPoint(Pentagon *pentagon, int numberInArray) {
@@ -298,30 +326,30 @@ float checkPoint(Pentagon *pentagon, int numberInArray) {
 
     switch (pointBelongPentagon) {
         case 0: { //Задача решена, точка не принадлежит
-            EnterCriticalSection(&cs);
+            EnterCriticalSection(&answerCS);
             answers[numberInArray] = 0;
             correctDecision++;
-            LeaveCriticalSection(&cs);
+            LeaveCriticalSection(&answerCS);
         }
             break;
         case 1: { //Задача решена, точка принадлежит
-            EnterCriticalSection(&cs);
+            EnterCriticalSection(&answerCS);
             answers[numberInArray] = 1;
             correctDecision++;
-            LeaveCriticalSection(&cs);
+            LeaveCriticalSection(&answerCS);
         }
             break;
         case -1: { //Ошибка во время выполнения
-            EnterCriticalSection(&cs);
+            EnterCriticalSection(&answerCS);
             errorInDecision++;
-            LeaveCriticalSection(&cs);
+            LeaveCriticalSection(&answerCS);
         }
             break;
         case -2: { //Нет решения
-            EnterCriticalSection(&cs);
+            EnterCriticalSection(&answerCS);
             answers[numberInArray] = 0;
             noSolution++;
-            LeaveCriticalSection(&cs);
+            LeaveCriticalSection(&answerCS);
         }
             break;
     }
@@ -334,14 +362,14 @@ float checkPoint(Pentagon *pentagon, int numberInArray) {
     threadTime = ElapsedMicroseconds.QuadPart;
 
     if (threadTime > MAX_TIME) {
-        EnterCriticalSection(&cs);
+        EnterCriticalSection(&timeCS);
         MAX_TIME = threadTime;
-        LeaveCriticalSection(&cs);
+        LeaveCriticalSection(&timeCS);
     }
     if (threadTime < MIN_TIME) {
-        EnterCriticalSection(&cs);
+        EnterCriticalSection(&timeCS);
         MIN_TIME = threadTime;
-        LeaveCriticalSection(&cs);
+        LeaveCriticalSection(&timeCS);
     }
 
     return threadTime;
