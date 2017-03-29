@@ -160,23 +160,21 @@ void checkPoint(string inFile, string outFile) {
     Point* pointArray = new Point[N];
     Point vertex;
 
+    try {
     std::ifstream fin(inFile);
     std::ofstream fout(outFile);
 
     if (!fin) {
-        cout << "Input file \n";
-        return;
+        throw "Input file not found\n";
     }
     if (!fout) {
-        cout << "Файл вывода не найден\n";
-        return;
+        throw "Output file not found\n";
     }
 
     Pentagon* pentagon = new Pentagon();
     fin >> *pentagon;
-    std::cout << *pentagon;
 
-    if (pentagon->checkPointBelong()) {
+    if (pentagon->checkPointBelong() == 1) {
         fout << 1;
     }
     else {
@@ -193,4 +191,9 @@ void checkPoint(string inFile, string outFile) {
 
     fin.close();
     fout.close();
+}
+catch (const char* err) {
+    cout << err << endl;
+    return;
+}
 }

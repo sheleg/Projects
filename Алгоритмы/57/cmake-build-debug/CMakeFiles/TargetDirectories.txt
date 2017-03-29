@@ -1,0 +1,3 @@
+/Users/vladasheleg/Documents/Git/Projects/Алгоритмы/57/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vladasheleg/Documents/Git/Projects/Алгоритмы/57/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vladasheleg/Documents/Git/Projects/Алгоритмы/57/cmake-build-debug/CMakeFiles/57.dir

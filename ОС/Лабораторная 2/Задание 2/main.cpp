@@ -82,14 +82,9 @@ struct Pentagon {
 
 
     int checkPointBelong() {
-        // for (size_t i = 0; i < 1000; i++) {
-        //     /* code */
-        // }
-        //
-
         bool b = false;
         int n = 5;
-        Sleep(10);
+        //Sleep(10);
         for (int i = 0; i < n - 1; i++) { //луч направляем вдоль оси х
             if (checkPoint.x < vertices[i]->x
                 && checkPoint.y < vertices[i]->y
@@ -142,7 +137,6 @@ struct Pentagon {
             && checkPoint.y == vertices[n - 1]->y)
             return 1;//если точка в вершине
 
-
         if (b == true) {
             return 1;
         }
@@ -166,9 +160,6 @@ int noSolution = 0;
 
 double MIN_TIME = INT_MAX;
 double MAX_TIME = INT_MIN;
-
-// int *threadSolution;
-// float *threadTime;
 
 unsigned long uThrID;
 
@@ -204,31 +195,24 @@ int main() {
 
 
     InitializeCriticalSection(&cs);
-    InitializeCriticalSection(&timeCS);
     InitializeCriticalSection(&answerCS);
-    InitializeCriticalSection(&taskCS);
+    InitializeCriticalSection(&timeCS);
 
     HANDLE *arrayThread = new HANDLE[ThreadCount];
     unsigned long *threadID = new unsigned long[ThreadCount]{};
 
-    // try {
-        for (int i = 0; i < ThreadCount; i++) {
-            arrayThread[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE) Thread, (void *) &i, 0, &threadID[i]);
-            if (NULL == arrayThread[i]) {
-                throw "Error in create thread";
-            }
+    for (int i = 0; i < ThreadCount; i++) {
+        arrayThread[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE) Thread, (void *) &i, 0, &threadID[i]);
+        if (NULL == arrayThread[i]) {
+            cout << "Error in create thread";
         }
-    // }
-    // catch(const char* err) {
-    //     cout << err << endl;
-    // }
+    }
 
     if (WaitForMultipleObjects(ThreadCount, arrayThread, TRUE, INFINITE) == WAIT_FAILED) {
         cout << "ERROR\n";
         cout << GetLastError() << endl;
         return 0;
     }
-
     for (int i = 0; i < ThreadCount; i++) {
         CloseHandle(arrayThread[i]);
     }
@@ -249,36 +233,26 @@ int main() {
     ElapsedMicroseconds.QuadPart *= 1000000;
     ElapsedMicroseconds.QuadPart /= Frequency.QuadPart;
 
-    // cout << "\nTime taken to write data to a file (nanoseconds): " << ElapsedMicroseconds.QuadPart << endl;
-    //
-    // cout << correctDecision << " tasks successfully solved\n";
-    // cout << errorInDecision << " tasks isn't solved due to an error in the calculation process\n";
-    // cout << noSolution << " tasks don't have a solution\n\n";
+    cout << "\nTime taken to write data to a file (nanoseconds): " << ElapsedMicroseconds.QuadPart << endl << endl;
+
+    cout << correctDecision << " tasks successfully solved\n";
+    cout << errorInDecision << " tasks isn't solved due to an error in the calculation process\n";
+    cout << noSolution << " tasks don't have a solution\n\n";
+
     for (int i = 0; i < ThreadCount; i++) {//вывод поток - кол-во задач
         cout << "Thread " << i + 1 << " solved " << threadSolution[i] << " tasks\n";
     }
 
-    // cout << "Minimum time to resolve: " << MIN_TIME << endl;
-    // cout << "Maximum time to resolve: " << MAX_TIME << endl << endl;
+    cout << "\nMinimum time to resolve: " << MIN_TIME << endl;
+    cout << "Maximum time to resolve: " << MAX_TIME << endl << endl;
 
     for (int i = 0; i < ThreadCount; i++) {
-        cout << "Thread " << i + 1 << " spent " << threadTime[i] << " milliseconds solving " << threadSolution[i]
-             << " tasks" << endl;
+        cout << "Thread " << i + 1 << " spent " << threadTime[i] << " nanoseconds solving tasks" << endl;
     }
-    //
-    // for (int i = 0; i < ThreadCount; i++) {
-    //     cout << threadSolution[i]  << endl;
-    // }
-    //
-    // cout << "\n\n\n\n\n";
-    // for (int i = 0; i < ThreadCount; i++) {
-    //     cout << threadSolution[i] << endl;
-    // }
+
 
     delete[] threadID;
     delete[] arrayThread;
-    // delete[] threadSolution;
-    // delete[] threadTime;
 
     fout.close();
     return 0;
@@ -300,17 +274,12 @@ void Thread(void *pParams) {
         pentagon = parametrs[currentTaskThread];
         checkTime = checkPoint(pentagon, currentTaskThread);
         threadTime[number] += checkTime;
-        threadSolution[number]++;
 
         EnterCriticalSection(&cs);
-        //cout << number << endl;
+        ++threadSolution[number];
         currentTaskThread = currentTask++;
         LeaveCriticalSection(&cs);
     }
-
-    EnterCriticalSection(&cs);
-    cout << "Thread " << number << " stoped\n";
-    LeaveCriticalSection(&cs);
 }
 
 float checkPoint(Pentagon *pentagon, int numberInArray) {
@@ -335,42 +304,42 @@ float checkPoint(Pentagon *pentagon, int numberInArray) {
         case 1: { //Задача решена, точка принадлежит
             EnterCriticalSection(&answerCS);
             answers[numberInArray] = 1;
-            correctDecision++;
+            ++correctDecision;
             LeaveCriticalSection(&answerCS);
         }
             break;
         case -1: { //Ошибка во время выполнения
-            EnterCriticalSection(&answerCS);
-            errorInDecision++;
-            LeaveCriticalSection(&answerCS);
+            //EnterCriticalSection(&answerCS);
+            ++errorInDecision;
+            //LeaveCriticalSection(&answerCS);
         }
             break;
         case -2: { //Нет решения
-            EnterCriticalSection(&answerCS);
+            //EnterCriticalSection(&answerCS);
             answers[numberInArray] = 0;
-            noSolution++;
-            LeaveCriticalSection(&answerCS);
+            ++noSolution;
+            //LeaveCriticalSection(&answerCS);
         }
             break;
     }
 
     QueryPerformanceCounter(&EndingTime);
     ElapsedMicroseconds.QuadPart = EndingTime.QuadPart - StartingTime.QuadPart;
-    ElapsedMicroseconds.QuadPart *= 1000;
+    ElapsedMicroseconds.QuadPart *= 1000000;
     ElapsedMicroseconds.QuadPart /= Frequency.QuadPart;
 
     threadTime = ElapsedMicroseconds.QuadPart;
 
+    EnterCriticalSection(&timeCS);
     if (threadTime > MAX_TIME) {
-        EnterCriticalSection(&timeCS);
         MAX_TIME = threadTime;
-        LeaveCriticalSection(&timeCS);
+        //LeaveCriticalSection(&timeCS);
     }
     if (threadTime < MIN_TIME) {
-        EnterCriticalSection(&timeCS);
+        //EnterCriticalSection(&timeCS);
         MIN_TIME = threadTime;
-        LeaveCriticalSection(&timeCS);
     }
+    LeaveCriticalSection(&timeCS);
 
     return threadTime;
 }
