@@ -1,0 +1,3 @@
+/Users/vladasheleg/Documents/Projects/testCPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vladasheleg/Documents/Projects/testCPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vladasheleg/Documents/Projects/testCPP/cmake-build-debug/CMakeFiles/testCPP.dir

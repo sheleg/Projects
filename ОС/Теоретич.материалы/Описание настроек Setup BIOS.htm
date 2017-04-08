@@ -1,0 +1,1647 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)http://pavlodar2000.narod.ru/setup.htm -->
+<HTML><HEAD><TITLE>Описание настроек Setup BIOS</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<STYLE type=text/css>.default {
+	FONT-SIZE: 12pt
+}
+.small {
+	FONT-SIZE: 10pt
+}
+.smallest {
+	FONT-SIZE: 8pt
+}
+H1 {
+	TEXT-ALIGN: center
+}
+H2 {
+	TEXT-ALIGN: center
+}
+H3 {
+	TEXT-ALIGN: left
+}
+P.question {
+	COLOR: #636363; FONT-WEIGHT: bolder; TEXT-DECORATION: underline; TEXT-INDENT: 0em
+}
+P {
+	TEXT-ALIGN: justify; TEXT-INDENT: 3em
+}
+</STYLE>
+
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR></HEAD>
+<BODY>
+<CENTER>
+<TABLE border=0 cellPadding=0 cellSpacing=0 height=22206 width=600>
+  <CAPTION></CAPTION>
+  <TBODY>
+  <TR>
+    <TD height=22206>
+      <H1>Описание настроек Setup BIOS</H1>
+      <P>В этом разделе описываются практически все (по мере создания) 
+      параметры, устанавливаемые в программе SETUP для BIOS фирмы <A 
+      href="http://www.award.com/">AWARD Software International Inc.</A> В 
+      конкретной материнской плате каких-то из описываемых параметров может и не 
+      быть. Одни и те же параметры могут называться по разному в зависимости от 
+      производителя материнской платы, поэтому здесь в некоторых случаях 
+      приведено несколько вариантов. </P>
+      <P>Для просмотра и корректировки установок chipset в BIOS вашего 
+      компьютера рекомендуем воспользоваться прелестной программой <A 
+      href="http://www.miro.pair.com/tweakbios/download.html" 
+      name=TweakBIOS>TweakBIOS</A>. С помощью этой программы можно изменять 
+      установки в BIOS "на лету", а также увидеть, правильно ли программа SETUP 
+      выполнила установки. </P>
+      <P align=center>ПРИМЕЧАНИЕ: Программа запускается и под различными 
+      Windows, но использовать ее можно только в DOS.<BR><BR></P>
+      <DIV align=center>
+      <CENTER>
+      <TABLE width=300>
+        <TBODY>
+        <TR>
+          <TD>
+            <H3>Содержание:</H3>
+            <H4>Раздел <A 
+            href="http://pavlodar2000.narod.ru/setup.htm#BIOS FEATURES SETUP">BIOS 
+            FEATURES SETUP</A></H4>
+            <P><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Virus Warning">Virus 
+            Warning</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Boot Virus Detection">Boot 
+            Virus Detection<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CPU Internal Cache/External Cache">CPU 
+            Internal Cache/External Cache</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CPU Level 1 Cache/CPU Level 2 Cache">CPU 
+            Level 1 Cache/CPU Level 2 Cache</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CPU Level 2 Cache ECC Check">CPU 
+            Level 2 Cache ECC Check<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#BIOS Update">BIOS 
+            Update</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CPU Fast String">CPU 
+            Fast String</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#HDD S.M.A.R.T  Capability">HDD 
+            S.M.A.R.T&nbsp; Capability<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Deturbo Mode">Deturbo 
+            Mode</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Quick Power On Self Test">Quick 
+            Power On Self Test</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Boot Sequence">Boot 
+            Sequence</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Boot Up System Speed">Boot 
+            Up System Speed<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Gate A20 Option">Gate 
+            A20 Option <BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Swap Floppy Drive">Swap 
+            Floppy Drive</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Boot Up Floppy Seek">Boot 
+            Up Floppy Seek</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Boot Up NumLock Status">Boot 
+            Up NumLock Status</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Typematic Rate Setting">Typematic 
+            Rate Setting</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Typematic Rate (Chars/Sec)">Typematic 
+            Rate (Chars/Sec)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Typematic Delay (Msec)">Typematic 
+            Delay (Msec)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#OS Select for DRAM  > 64MB">OS/2 
+            Onboard Memory &gt; 64MB</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PS/2 Mouse Function Control">PS/2 
+            Mouse Function Control</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI/VGA Palette Snoop">PCI/VGA 
+            Palette Snoop</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Video ROM BIOS Shadow">Video 
+            ROM BIOS Shadow</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Floppy Disk Access Control (R/W)">Floppy 
+            Disk Access Control (R/W)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Report No FDD For WIN 95">Report 
+            No FDD For WIN 95</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Delay IDE Initial">Delay 
+            IDE Initial</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#MPS 1.4 Support">MPS 
+            1.4 Support</A><BR></P>
+            <H4>Раздел <A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CHIP_FEATURES">CHIPSET 
+            FEATURES SETUP</A></H4>
+            <P>Установка параметров для FPM DRAM, EDO DRAM и Synchronous 
+            DRAM<BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#AUTO Configuration">AUTO 
+            Configuration</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PrechargeTime">DRAM 
+            RAS# Precharge Time</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#LeadoffTiming">DRAM R/W 
+            Leadoff Timing<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Ras_to_Cas_Delay">DRAM 
+            RAS to CAS Delay</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#DRAM_R&amp;B_Timing">DRAM 
+            Read Burst Timing</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Speculative Leadoff">Speculative 
+            Leadoff</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#TurnAround">Turn-Around 
+            Insertion</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Data Integrity (PAR/ECC)">Data 
+            Integrity (PAR/ECC)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ECC_PARITY">DRAM 
+            ECC/PARITY Select</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Fast RAS# to CAS# Delay">Fast 
+            RAS# to CAS# Delay</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SDRAM Configuration">SDRAM 
+            Configuration<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SDRAM RAS Precharge Time">SDRAM 
+            RAS Precharge Time<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#sdram_ras_to_cas">SDRAM 
+            (CAS Lat/RAS-to-CAS )</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SDRAM CAS# Latency">SDRAM 
+            CAS# Latency</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SDRAM CAS to RAS Delay">SDRAM 
+            CAS to RAS Delay<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SDRAM Banks Close Policy">SDRAM 
+            Banks Close Policy<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#DRAM Idle Timer">DRAM 
+            Idle Timer<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Snoop Ahead">Snoop 
+            Ahead<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Host Bus Fast Data Ready">Host 
+            Bus Fast Data Ready</A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Snoop Ahead"><BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Refresh RAS# Assertion">Refresh 
+            RAS# Assertion</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#MA Wait State">MA Wait 
+            State</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SDRAM Speculative Read">SDRAM 
+            Speculative Read</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Spread Spectrum Modulated">Spread 
+            Spectrum Modulated</A><BR><BR>Установка параметров <A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Cashe Memory">кэширования</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#System BIOS Casheable">System 
+            BIOS Casheable</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Video BIOS Cacheable">Video 
+            BIOS Cacheable </A><BR><BR>Конфигурирование шин PCI, AGP, портов 
+            ввода/вывода и установка параметров IDE контроллера<BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Video Memory Cache Mode">Video 
+            Memory Cache Mode</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Graphics Aperture Size">Graphics 
+            Aperture Size<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI 2.1 Support">PCI 
+            2.1 Support</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#8BitRecoveryTime">8 Bit 
+            I/O Recovery Time</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#16BitRecoveryTime">16 
+            Bit I/O Recovery Time</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Memory_Hole">Memory 
+            Hole At 15M-16M</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Peer_Concurrancy">Peer 
+            Concurrancy</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SpecialFeatures">Chipset 
+            Special Features</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Passive Release">Passive 
+            Release</A> <BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI Delayed Transaction">PCI 
+            Delayed Transaction</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Parallel Port Mode (ECP+EPP)">Parallel 
+            Port Mode (ECP+EPP)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Parallel Port Mode">Parallel 
+            Port Mode</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ECP DMA Select">ECP DMA 
+            Select<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Onboard_PCI_IDE_Enable">Onboard 
+            PCI IDE Enable</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Onboard FDC Controller">Onboard 
+            FDC Controller</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IDE_PIO">Выбор режима 
+            работы каждого диска </A><BR></P>
+            <H4>Раздел <A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI_CONF">PnP/PCI 
+            Configuration Setup</A></H4>
+            <P><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PNP OS Installed">PNP 
+            OS Installed</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Resources Controlled By">Resources 
+            Controlled By</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Reset Configuration Data">Reset 
+            Configuration Data</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ n Assigned to">IRQ 
+            n Assigned to</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#DMA n Assigned to">DMA 
+            n Assigned to<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI IRQ Activated by">PCI 
+            IRQ Activated by</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI IDE IRQ Map to">PCI 
+            IDE IRQ Map to</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI Slot IDE 2nd Channel">PCI 
+            Slot IDE 2nd Channel <BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ n Used By ISA">IRQ 
+            n Used By ISA</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#DMA n Used By ISA">DMA 
+            n Used By ISA</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ISA MEM Block BASE">ISA 
+            MEM Block BASE</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Onboard AHA BIOS">Onboard 
+            AHA BIOS<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ONB AHA BIOS First">ONB 
+            AHA BIOS First<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ONB SCSI SE Term.">ONB 
+            SCSI SE Term.<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ONB SCSI LVD Term.">ONB 
+            SCSI LVD Term.<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#SYMBIOS SCSI BIOS">SYMBIOS 
+            SCSI BIOS</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PCI Latency Timer">PCI 
+            Latency Timer</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#USB IRQ">USB 
+            IRQ</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#VGA BIOS Sequence">VGA 
+            BIOS Sequence</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#USB Keybord Support Via">USB 
+            Keybord Support Via</A><BR></P>
+            <H4>Раздел <A href="http://pavlodar2000.narod.ru/setup.htm#PM">Power 
+            Management Setup</A></H4>
+            <P><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Power Management">Power 
+            Management</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ACPI function">ACPI 
+            function</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Video Off Option">Video 
+            Off Option</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Video Off Method">Video 
+            Off Method</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Suspend Switch">Suspend 
+            Switch</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Doze Speed">Doze 
+            Speed</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Stby Speed">Stby 
+            Speed</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#HDD Power Down">HDD 
+            Power Down</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Doze Mode">Doze 
+            Mode</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Standby Mode">Standby 
+            Mode</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Suspend Mode">Suspend 
+            Mode</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 3 (Wake-up)">IRQ 3 
+            (Wake-up)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 4 (Wake-up)">IRQ 4 
+            (Wake-up)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 8 (Wake-up)">IRQ 8 
+            (Wake-up)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 12 (Wake-up)">IRQ 
+            12 (Wake-up)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 3 (COM2)">IRQ 3 
+            (COM2)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 4 (COM1)">IRQ 4 
+            (COM1)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 5 (LPT2)">IRQ 5 
+            (LPT2)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 6 (Floppy Disk)">IRQ 
+            6 (Floppy Disk)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 7 (LPT1)">IRQ 7 
+            (LPT1)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 8 (RTC Alarm)">IRQ 
+            8 (RTC Alarm) </A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 9 (IRQ2 Redir)">IRQ 
+            9 (IRQ2 Redir)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 10 (Reserved)">IRQ 
+            10 (Reserved)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 11 (Reserved)">IRQ 
+            11 (Reserved) <BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 12 (PS/2 Mouse)">IRQ 
+            12 (PS/2 Mouse)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 13 (Coprocessor)">IRQ 
+            13 (Coprocessor)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 14 (Hard Disk)">IRQ 
+            14 (Hard Disk)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ 15 (Reserved)">IRQ 
+            15 (Reserved)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PWR Button< 4 Secs">PWR 
+            Button &lt; 4 Secs (он же Soft-of By PWR-BTTN)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#PWR Up On Modem Act">PWR 
+            Up On Modem Act (он же Resume by Ring)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#IRQ8 Resume by Suspend">IRQ8 
+            Resume by Suspend</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#ZZ Active In Suspend">ZZ 
+            Active In Suspend</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Wake On LAN">Wake On 
+            LAN<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#AC PWR Loss Restart">AC 
+            PWR Loss Restart</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Automatic Power Up">Automatic 
+            Power Up<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Chassis Fan Speed (xxxxRPM)">Chassis 
+            Fan Speed (xxxxRPM)</A><BR><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CPU Fan Speed (xxxxRPM)">CPU 
+            Fan Speed (xxxxRPM)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Power Fan Speed (xxxxRPM)">Power 
+            Fan Speed (xxxxRPM)<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#CPU Temperature">CPU 
+            Temperature<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#MB Temperature">MB 
+            Temperature<BR></A><A 
+            href="http://pavlodar2000.narod.ru/setup.htm#Voltage Monitor">Voltage 
+            Monitor</A></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+      <H3>Раздел <A name="BIOS FEATURES SETUP">BIOS FEATURES SETUP</A></H3>
+      <UL>
+        <LI><STRONG><A name="Virus Warning">Virus Warning</A> 
+        </STRONG>(Предупреждение о вирусе) - разрешение этого параметра 
+        запрещает любую запись в загрузочный сектор жесткого диска без 
+        разрешения пользователя. Он введен для защиты от так называемых 
+        boot-вирусов, поражающих загрузочный сектор. Рекомендуется всегда 
+        разрешать этот параметр, но следует учесть, что, например, Windows 95 
+        при установке "зависает", если Virus Warning установлен в Enable (при 
+        этом на экране появляется черный квадрат).Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Boot Virus Detection">Boot Virus Detection</A> 
+        </STRONG>(Определение вируса в загрузочном секторе) - смысл этого 
+        параметра сильно отличается от <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Virus Warning">Virus 
+        Warning</A>. Идея заключается в следующем - если этот параметр запрещен, 
+        то до загрузки операционной системы BIOS переписывает загрузочный сектор 
+        во флэш-память и сохраняет его там. После установки параметра в значение 
+        Enabled BIOS не будет загружать систему с жесткого диска, если 
+        содержимое boot-сектора отличается от сохраненного в памяти. Далее, по 
+        усмотрению пользователя, возможно либо загрузить систему с жесткого 
+        диска, либо с дискеты. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="CPU Internal Cache/External Cache">CPU Internal 
+        Cache/External Cache</A> </STRONG>(Внутренний/Внешний кэш процессора) - 
+        разрешается/запрещается внутренний или внешний кэш процессора. Запрещать 
+        какой-либо вид кэш-памяти следует только в случае необходимости 
+        искусственно замедлить работу компьютера, например, при установке какой 
+        либо старой платы расширения. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="CPU Level 1 Cache/CPU Level 2 Cache">CPU Level 1 
+        Cache/CPU Level 2 Cache</A> </STRONG>(Кэш процессора первого уровня/Кэш 
+        процессора второго уровня) - разрешается/запрещается кэш первого уровня 
+        или кэш процессора второго уровня для процессоров архитектуры Pentium 
+        Pro (Pentium II, Deshutes и т.п.). Запрещать какой-либо вид кэш-памяти 
+        следует только в случае необходимости искусственно замедлить работу 
+        компьютера, например, при установке какой либо старой платы расширения. 
+        Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="CPU Level 2 Cache ECC Check">CPU Level 2 Cache ECC 
+        Check</A> </STRONG>(Включить ECC для кэш-памяти процессора 2 уровня) - 
+        параметр может присутствовать только для плат с процессорами архитектуры 
+        Pentium II. Разрешать его есть смысл только в том случае, если 
+        установленный процессор класса Pentium II имеет кэш-память второго 
+        уровня с возможностью ECC контроля. В некоторых процессорах допущена 
+        ошибка и включение этого режима может привести к нестабильной работе 
+        компьютера. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="BIOS Update"><STRONG>BIOS Update</STRONG></A> (Обновление 
+        BIOS) - процессоры семейства P6 (Pentium Pro, Pentium II, Celeron, Xeon 
+        и т.д.) имеют особый механизм, называемый "программируемым микрокодом", 
+        который позволяет исправить некоторые виды ошибок, допущенных при 
+        разработке и/или изготовлении процессоров за счет изменения микрокода. 
+        Обновления микрокода остаются в BIOS и загружаются в процессор после 
+        включения компьютера и запуска программы BIOS. Именно поэтому BIOS для 
+        материнских плат с Pentium II и выше необходимо регулярно обновлять. 
+        Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="CPU Fast String">CPU Fast String</A> 
+        </STRONG>(Быстрые операции со строками) - Разрешение этого параметра 
+        позволяет использовать некоторые специфические особенности архитектуры 
+        семейства Pentium Pro (Pentium II, Deshutes и т.п.), в частности, 
+        возможность кэширования операций со строками. Надо только понимать, что 
+        и в самой программе должны быть выполнены условия для включения этого 
+        механизма. Эти условия указаны в документации на любой процессор данного 
+        семейства. Параметр рекомендуется оставлять в состоянии "Разрешено". 
+        Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="HDD S.M.A.R.T  Capability"><STRONG>HDD S.M.A.R.T 
+        Capability</STRONG></A> (Возможность S.M.A.R.T диагностики) - позволяет 
+        разрешать/запрещать возможность диагностики состояния жесткого диска в 
+        соответствии с требованиями стандарта S.M.A.R.T. Авторы BIOS, к 
+        сожалению, не раскрывают механизма функционирования S.M.A.R.T 
+        диагностики в BIOS, поэтому не совсем понятно, каким образом 
+        обрабатывается информация от жесткого диска, так как граничные значения 
+        параметров жесткого диска зависят от конкретного производителя. При 
+        разрешении параметра и нарушении нормального функционирования жесткого 
+        диска BIOS выдает на экран соответствующее сообщение до появления 
+        таблицы с характеристиками компьютера. Следует учесть, что разрешение 
+        этого параметра снизит производительность компьютера на несколько 
+        процентов. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Deturbo Mode">Deturbo Mode</A> </STRONG>(Режим 
+        deturbo) - при разрешении этого параметра сигнал FLUSH# становится 
+        активным и никакие данные после этого не кэшируются процессором в свой 
+        внутренний кэш (кэш первого уровня) процессорами архитектуры Pentium Pro 
+        (Pentium II, Deshutes и т.п.). Разрешение этого параметра следует 
+        использовать только при необходимости сознательно замедлить работу 
+        компьютера. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Quick Power On Self Test"><STRONG>Quick Power On Self 
+        Test</STRONG></A> (быстрый тест компьютера после включения питания) - 
+        разрешение этого параметра приводит к значительному сокращению времени 
+        на начальное тестирование компьютера BIOS'ом, особенно при значительных 
+        объемах оперативной памяти. Следует только учесть, что память, например, 
+        в этом случае не тестируется, а только проверяется ее размер. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Boot Sequence">Boot Sequence</A> 
+        </STRONG>(последовательность загрузки) - параметр устанавливает 
+        последовательность опроса устройств, с которых может быть загружена 
+        операционная система. Эти устройства обозначаются либо буквами для 
+        физических жестких дисков и обычных дисководов, либо названием 
+        устройства - CD-ROM для накопителей CD-ROM, LS для накопителей a:drive 
+        на 120 Mb или ZIP для накопителей ZIP IDE на 100 Mb. Для современных 
+        версий возможные значения могут выглядеть так: 
+        <STRONG>A</STRONG>,<STRONG>C</STRONG>; <STRONG>C only</STRONG>; 
+        <STRONG>CD-ROM</STRONG>, <STRONG>C</STRONG>; <STRONG>C</STRONG>, 
+        <STRONG>A</STRONG>; <STRONG>D</STRONG>, <STRONG>A</STRONG>; 
+        <STRONG>LS/ZIP</STRONG>, <STRONG>C</STRONG>. 
+        <LI><A name="Boot Up System Speed"><STRONG>Boot Up System 
+        Speed</STRONG></A> (скорость системы после загрузки) - скорость 
+        системной шины и соответственно, процессора после включения компьютера. 
+        Параметр используется для искуственного снижения скорости компьютера 
+        из-за старых программ и/или плат расширения. Может принимать значения:
+        <UL>
+          <LI><STRONG>High </STRONG>- номинальная скорость процессора и 
+          номинальная частота системной шины 
+          <LI><STRONG>Low</STRONG> - пониженная скорость процессора и частота 
+          системной шины </LI></UL>
+        <LI><STRONG><A name="Gate A20 Option">Gate A20 Option</A> 
+        </STRONG>(вариант включения шины A20) - параметр позволяет управлять 
+        способом включения адресной шины A20 и, тем самым, обращаться к памяти 
+        за 1 мегабайтом. Этот параметр в современных платах не управляется 
+        пользователем и всегда в значении Fast. Может принимать значения: 
+        <UL>
+          <LI><STRONG>Fast</STRONG> - управление осуществляется chipset, что 
+          повышает скорость работы 
+          <LI><STRONG>Normal</STRONG> - управление осуществляется через 
+          контроллер клавиатуры </LI></UL>
+        <LI><A name="Swap Floppy Drive"><STRONG>Swap Floppy Drive</STRONG></A> 
+        (перестановка дисководов) - если разрешен, то дисководы A и B как бы 
+        меняются местами. Имеет смысл только при наличии 2-х дисководов в 
+        компьютере. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Boot Up Floppy Seek"><STRONG>Boot Up Floppy 
+        Seek</STRONG></A> (поиск загрузочного дисковода после включения 
+        компьютера) - если этот параметр разрешен, то BIOS обращается к каждому 
+        дисководу на предмет распознавания его формата (40 или 80 дорожек он 
+        поддерживает). Поскольку уже с 1993 года дисководы на 40 дорожек не 
+        выпускаются, не следует разрешать этот параметр, так как BIOS каждый раз 
+        будет тратить несколько секунд на выяснение формата дисковода. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Boot Up NumLock Status">Boot Up NumLock Status</A> 
+        </STRONG>(включение цифровой клавиатуры по включению компьютера) - 
+        разрешение этого параметра включает индикатор NumLock и цифровая 
+        клавиатура генерирует коды цифр и знаков, в противном случае 
+        генерируются коды стрелок, Ins, Del и т.д. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Typematic Rate Setting">Typematic Rate Setting</A> 
+        </STRONG>(установка скорости ввода символов) - разрешает или запрещает 
+        установку скорости повторения ввода символов клавиатурой при нажатой 
+        клавише. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Typematic Rate (Chars/Sec)">Typematic Rate 
+        (Chars/Sec)</A> </STRONG>(частота повторения симв/сек) - параметр 
+        оказывает действие только в том случае, если разрешен <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Typematic Rate Setting">Typematic 
+        Rate Setting</A>. Частота повторения имеет ряд фиксированных значений, 
+        которые и может принимать этот параметр:
+        <UL>
+          <LI><STRONG>6</STRONG>, <STRONG>8</STRONG>, 
+          <STRONG>10</STRONG>,<STRONG>12</STRONG>, <STRONG>15</STRONG>, 
+          <STRONG>20</STRONG>, <STRONG>24</STRONG> или <STRONG>30</STRONG> 
+        </LI></UL>
+        <LI><A name="Typematic Delay (Msec)"><STRONG>Typematic Delay 
+        (Msec)</STRONG></A> (задержка повторения в msec) - устанавливает 
+        значение задержки от момента нажатия клавиши до начала повторения 
+        символа клавиатурой. Оказывает действие только в том случае, если 
+        разрешен <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Typematic Rate Setting">Typematic 
+        Rate Setting</A>. Значение может быть выбрано из ряда:
+        <UL>
+          <LI><STRONG>250</STRONG>, <STRONG>500</STRONG>, <STRONG>750</STRONG> 
+          или <STRONG>1000</STRONG> </LI></UL>
+        <LI><STRONG><A name="PS/2 Mouse Function Control">PS/2 Mouse Function 
+        Control</A> </STRONG>(управление функциями порта мыши PS/2) - разрешение 
+        этого параметра отдает IRQ12 только для порта мыши PS/2. В противном 
+        случае, при отсутствии подключенной к компьютеру мыши с интерфейсом 
+        PS/2, IRQ12 свободно для других устройств. Рекомендуется устанавливать 
+        значение Auto. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено и IRQ12 занято. 
+          <LI><STRONG>Auto</STRONG> - BIOS определяет присутствие или отсутствие 
+          PS/2 мыши. </LI></UL>
+        <LI><STRONG><A name="OS Select for DRAM  > 64MB">OS/2 Onboard Memory 
+        &gt; 64MB</A> </STRONG>(выбор значения для OS/2, если памяти больше, чем 
+        64 Mb) - требует разрешения при выполнении двух условий - в компьютере 
+        установлено больше, чем 64 Mb памяти и используется OS/2 в качестве 
+        операционной системы. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="PCI/VGA Palette Snoop">PCI/VGA Palette Snoop</A> 
+        </STRONG>(корректировка палитры VGA видеокарты на PCI) - параметр 
+        следует разрешать только в том случае, если на экране некорректно 
+        отображаются цвета. Как правило, этот эффект может возникать при 
+        использовании таких нестандартных устройств, как MPEG карты, 3D 
+        ускорители и т.п. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Video ROM BIOS Shadow">Video ROM BIOS Shadow</A> 
+        </STRONG>(видео BIOS в память) - разрешение этого параметра приводит к 
+        переносу видео BIOS из ПЗУ (постоянного запоминающего устройства) на 
+        видеокарте в основную память компьютера, что значительно ускоряет работу 
+        с видео BIOS (это необходимо и видно в DOS). Ускорение объясняется как и 
+        тем, что обращение к ПЗУ намного медленнее, чем к ОЗУ, так и тем, что 
+        обращение к ПЗУ, как правило, выполняется в 8-ми разрядной сетке, а к 
+        ОЗУ - 32-х или 64-х сетке. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Floppy Disk Access Control (R/W)">Floppy Disk 
+        Access Control (R/W)</A> </STRONG>(управление чтением/записью на гибкий 
+        диск) - разрешение этого параметра позволяет записывать информацию на 
+        дискету, в противном случае дискету можно читать. Параметр следует 
+        использовать для защиты от несанкционированного копирования с 
+        компьютера. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Report No FDD For WIN 95">Report No FDD For WIN 
+        95</A> </STRONG>(сообщение об отсутствии накопителя на гибких дисках для 
+        Windows 95) - параметр используется, как правило, в сетевых компьютерах 
+        без флоппи-дисковода или в случае необходимости размещения в компьютере 
+        устройства, для которого не хватает прерывания. При выборе Yes и 
+        одновременном выборе Disable в параметре <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Onboard FDC Controller">Onboard 
+        FDC Controller</A>, Windows 95 освободит IRQ 6, занимаемое контроллером 
+        флоппи-дисковода, для использования другими устройствами. Совместное 
+        разрешение этих параметров обязательно в компьютерах без дисководов 
+        (используемых как сетевые в организациях) для уменьшения времени запуска 
+        Windows 95. Может принимать значения:
+        <UL>
+          <LI><STRONG>Yes </STRONG>- освободить IRQ 6 
+          <LI><STRONG>No</STRONG> - не освобождать (независимо от того, есть ли 
+          флоппи-дисковод или нет) </LI></UL>
+        <LI><STRONG><A name="Delay IDE Initial">Delay IDE Initial</A> 
+        </STRONG>(задержка инициализации IDE устройства) - в данном параметре 
+        устанавливается значение времени (в секундах) в течении которого IDE 
+        устройство не будет опрашиваться BIOS'ом после включения питания или 
+        сброса. Ненулевое значение параметра рекомендуется устанавливать только 
+        в случае применения каких-либо старых жестких дисков или приводов 
+        CD-ROM. Параметр принимает значения в диапазоне от 0 до 30 сек., в 
+        зависимости от производителя материнской платы. 
+        <LI><STRONG><A name="MPS 1.4 Support">MPS 1.4 
+        Support</A></STRONG>(поддержка режима MPS 1.4) - параметр появляется 
+        только в BIOS материнских плат, допускающих установку нескольких 
+        процессоров. Выбор режима влияет на распределение ресурсов компьютера. 
+        При запрещении устанавливается режим MPS 1.1. Строго говоря, для 
+        различных Windows можно устанавливать любое значение (даже лучше 
+        Disable), а для Novell Netware рекомендуется Enable. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <H3><A name=CHIP_FEATURES>Раздел CHIPSET FEATURES SETUP</A></H3>
+      <H4><A name=SetupDRAM></A>Установка параметров для FPM DRAM, EDO DRAM и 
+      Synchronous DRAM</H4>
+      <UL>
+        <LI><A name="AUTO Configuration"><STRONG>AUTO Configuration</STRONG></A> 
+        (автоматическая конфигурация) - имеет 3 значения
+        <UL>
+          <LI><STRONG>60 ns</STRONG> - устанавливает парамеры доступа для DRAM с 
+          быстродействием 60 ns 
+          <LI><STRONG>70 ns</STRONG> - то же для памяти с быстродействием 70 ns 
+          <LI><STRONG>Disabled</STRONG> (запрещена) - позволяет установить любые 
+          возможные параметры доступа к DRAM памяти </LI></UL>
+        <LI><STRONG><A name=PrechargeTime>DRAM</A> RAS# Precharge Time 
+        </STRONG>(время предварительного заряда по RAS) - Эта функция позволяет 
+        определить количество тактов системной шины для формирования сигнала 
+        RAS. Уменьшение этого значение увеличивает быстродействие, но чрезмерное 
+        для конкретной памяти уменьшение может привести к потере данных. 
+        Принимает значения:
+        <UL>
+          <LI><STRONG>3</STRONG> 
+          <LI><STRONG>4</STRONG> </LI></UL>
+        <LI><STRONG><A name=LeadoffTiming>DRAM</A> R/W Leadoff Timing</STRONG> 
+        (число тактов при подготовке выполнения операции чтения/записи) - 
+        определяет число тактов на шине до выполнения любых операций с DRAM. 
+        Параметр может принимать значения:
+        <UL>
+          <LI><STRONG>8/7</STRONG> - восемь тактов для чтения и семь тактов для 
+          записи 
+          <LI><STRONG>7/5</STRONG> - семь тактов для чтения и пять тактов для 
+          записи </LI></UL>
+        <LI><STRONG><A name=Ras_to_Cas_Delay>DRAM</A> RAS to CAS Delay</STRONG> 
+        (задержка между RAS и CAS) - Во время доступа к памяти обращения к 
+        столбцам и строкам выполняются отдельно друг от друга. Этот параметр и 
+        определяет отстояние одного сигнала от другого. Параметр может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>3</STRONG> - три такта задержки 
+          <LI><STRONG>2</STRONG> - два такта задержки<BR>Уменьшение значения 
+          увеличивает быстродействие. </LI></UL>
+        <LI><A name=DRAM_R&amp;B_Timing></A><STRONG>DRAM Read Burst 
+        Timing</STRONG> (время пакетного чтения памяти) - Запрос на чтение и 
+        запись генерируется процессором в четыре раздельные фазы. В первой фазе 
+        инициируется обращение к конкретной области памяти, а в оставшихся 
+        происходит собственно чтение данных. Параметр может принимать значения:
+        <UL>
+          <LI><STRONG>x2222</STRONG> - два такта задержки 
+          <LI><STRONG>x3333</STRONG> - три такта задержки 
+          <LI><STRONG>x4444</STRONG> - четыре такта задержки<BR>Уменьшение 
+          суммарного количества тактов увеличивает быстродействие. </LI></UL>
+        <LI><STRONG><A name="Speculative Leadoff">Speculative Leadoff</A> 
+        </STRONG>(опережающая выдача сигнала чтения) - разрешение этого 
+        параметра позволяет выдавать сигнал чтения немного ранее, чем адрес 
+        будет декодирован. Этот прием снижает общие затраты времени на операцию 
+        чтения. Другими словами, процессор будет инициировать сигнал чтения 
+        одновременно с генерацией того адреса, где находятся необходимые данные. 
+        Сигнал чтения воспринимается контроллером DRAM и, если параметр 
+        Speculative Leadoff разрешен, то контроллер выдаст сигнал чтения до 
+        завершения декодирования адреса. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled </STRONG>- разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name=TurnAround><STRONG>Turn-Around Insertion</STRONG></A> 
+        (задержка между циклами) - Если этот параметр разрешен (Enabled), то 
+        между двумя последовательными циклами обращения к памяти включается один 
+        дополнительный такт. Разрешение уменьшает быстродействие, но увеличивает 
+        достоверность при операциях чтения/записи. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Data Integrity (PAR/ECC)">Data Integrity 
+        (PAR/ECC)</A> </STRONG>(целостность данных) - разрешает/запрещает 
+        контроль памяти на ошибки. Вид контроля устанавливается параметром <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#ECC_PARITY">DRAM ECC/PARITY 
+        Select</A>. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name=ECC_PARITY><STRONG>DRAM ECC/PARITY Select</STRONG></A>(режим 
+        коррекции ошибок/проверка по четности) - Параметр появляется только в 
+        тех материнских платах, в которых chipset поддерживает ECC и только в 
+        том случае, если установлены модули памяти с истинной четностью. В 
+        некоторых вариантах BIOS этим параметром может устанавливаться только 
+        вид проверки, а разрешение на проверку устанавливается параметром <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Data Integrity (PAR/ECC)">Data 
+        Integrity (PAR/ECC)</A>. Такие планки часто называют также 
+        36-разрядными. Может принимать значения:
+        <UL>
+          <LI><STRONG>Parity</STRONG> - в случае возникновения ошибки на монитор 
+          выдается сообщение о сбое по четности в памяти и работа компьютера 
+          останавливается 
+          <LI><STRONG>ECC</STRONG> -<STRONG>E</STRONG>rror 
+          <STRONG>C</STRONG>ontrol <STRONG>C</STRONG>orrection- в случае 
+          возникновения одиночной ошибки она исправляется и работа продолжается. 
+          Если имеет место не одиночная ошибка, то работа компьютера также 
+          прекращается. Следует только учесть, что по данным Intel, скорость 
+          обмена с памятью при включении этого режима уменьшается приблизительно 
+          на 3% </LI></UL>
+        <LI><A name="Fast RAS# to CAS# Delay"><STRONG>Fast RAS# to CAS# 
+        Delay</STRONG></A> (интервал между RAS и CAS) - При регенерации памяти 
+        строки и столбцы адресуются отдельно, поэтому этот параметр 
+        устанавливает интервал между сигналами RAS и CAS. 
+        <LI><A name="SDRAM Configuration"><STRONG>SDRAM 
+        Configuration</STRONG></A> (Конфигурация SDRAM) - параметром 
+        определяется, должна ли программа BIOS сама определять временные 
+        характеристики доступа к памяти на основании информации из блока SPD или 
+        разрешить это сделать пользователю. Может принимать значения:
+        <UL>
+          <LI><STRONG>By SPD</STRONG> - параметры доступа устанавливаются по SPD 
+
+          <LI><STRONG>7 ns (143 Mhz)</STRONG> - параметры доступа 
+          устанавливаются BIOS как для памяти с временем доступа 7 ns и частотой 
+          шины 143 MHz 
+          <LI><STRONG>8 ns (125 Mhz)</STRONG> - параметры доступа 
+          устанавливаются BIOS как для памяти с временем доступа 8 ns и частотой 
+          шины 125 MHz 
+          <LI><STRONG>Disabled</STRONG> - устанавливаются пользователем </LI></UL>
+        <LI><STRONG><A name="SDRAM RAS Precharge Time">SDRAM RAS Precharge 
+        Time</A> </STRONG>(Cинхронная память - время предварительного заряда) - 
+        параметр позволяет определять быстрое или медленное накопление заряда по 
+        RAS до начала цикла регенерации памяти. Установка значения Fast 
+        увеличивает быстродействие, но Slow повышает стабильность работы 
+        компьютера, поэтому значение Fast следует устанавливать в случае 
+        уверенности в качестве памяти. Может принимать значения:
+        <UL>
+          <LI><STRONG>Fast</STRONG> -быстро 
+          <LI><STRONG>Slow</STRONG> - медленно </LI></UL>
+        <LI><A name=sdram_ras_to_cas><STRONG>SDRAM (CAS Lat/RAS-to-CAS 
+        )</STRONG></A> (Cинхронная память - задержка CAS/От RAS к CAS) - этот 
+        параметр позволяет комбинировать между длительностью сигнала CAS и 
+        задержкой между сигналами RAS и CAS. Значение этого параметра зависит от 
+        характеристик SDRAM, примененной в материнской плате и от быстродействия 
+        процессора. Поэтому изменять этот параметр стоит крайне осторожно. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>2/2</STRONG> 
+          <LI><STRONG>3/3</STRONG> </LI></UL>
+        <LI><A name="SDRAM CAS to RAS Delay"><STRONG>SDRAM CAS to RAS 
+        Delay</STRONG></A> (задержка между CAS и RAS) - параметр определяет 
+        значение задержки после выдачи сигнала RAS до появления сигнала CAS для 
+        синхронной памяти. Чем меньше это значение, тем быстрее доступ к памяти. 
+        Тем не менее изменять его следует осторожно. Параметр может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>3</STRONG> - три такта задержки 
+          <LI><STRONG>2</STRONG> - два такта задержки </LI></UL>
+        <LI><A name="SDRAM CAS# Latency"><STRONG>SDRAM CAS# Latency</STRONG></A> 
+        (задержка CAS для SDRAM) - Устанавливает значение задержки выдачи 
+        сигнала CAS для SDRAM. Меньшее значение увеличивает производительность 
+        системы. Рекомендуется устанавливать меньшее значение для SDRAM с 
+        быстродействием 10 nc или лучше.Может принимать значения:
+        <UL>
+          <LI><STRONG>2T</STRONG> 
+          <LI><STRONG>3T</STRONG> </LI></UL>
+        <LI><STRONG><A name="SDRAM Banks Close Policy">SDRAM Banks Close 
+        Policy</A> </STRONG>(правила закрытия банков SDRAM памяти) - параметр 
+        был введен для плат с набором 440LX из-за того, что память с 2-х 
+        банковой организацией некорректно работает в этих платах, если параметры 
+        доступа к банкам памяти установлены по умолчанию. В наборе 430TX этого 
+        не требовалось, так правила доступа для различной памяти были одинаковы. 
+        Изменять установки BIOS по умолчанию для этого параметра следует только 
+        в случае нестабильной работы памяти. Может принимать значения:
+        <UL>
+          <LI><STRONG>Page Miss </STRONG>- используется для двухбанковой памяти 
+          <LI><STRONG>Arbitration </STRONG>- для памяти из 4-х банков </LI></UL>
+        <LI><A name="DRAM Idle Timer"><STRONG>DRAM Idle Timer</STRONG></A>&nbsp; 
+        (Таймер пассивного состояния памяти) - этим параметром устанавливается 
+        время (в тактах) до закрытия всех открытых страниц памяти. Влияет как на 
+        EDO так и на SDRAM память. Может принимать значения 0, 2, 4, 8, 10, 12, 
+        16, 32. 
+        <LI><A name="Snoop Ahead"><STRONG>Snoop Ahead</STRONG></A> (Предвидение) 
+        - разрешение этогопараметра позволяет потоковый обмен данными между PCI 
+        и памятью. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Host Bus Fast Data Ready">Host Bus Fast Data 
+        Ready</A> </STRONG>(Быстрая готовность данных на шине) - разрешение 
+        этого параметра позволит снимать данные с шины одновременно с их 
+        выборкой. В противном случае данные будут удерживаться на шине один 
+        дополнительный такт. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Refresh RAS# Assertion"><STRONG>Refresh RAS# 
+        Assertion</STRONG></A> (задание RAS для регенерации) - Этим параметром 
+        устанавливается количество тактов (т.е. длительность RAS) для цикла 
+        регенерации. Принимаемые значения определяются качеством памяти и 
+        набором микросхем (chipset). Меньшее значение увеличивает 
+        производительность. 
+        <LI><STRONG><A name="MA Wait State">MA Wait State</A> </STRONG>(такты 
+        ожидания до чтения памяти) - параметр позволяет установить или снять 
+        дополнительный такт ожидания до начала чтения памяти. Для памяти типа 
+        EDO один такт всегда есть по умолчанию и установка значения Slow 
+        добавляет еще один такт ожидания. Для SDRAM нет такта ожидания по 
+        умолчанию и установка Slow один такт вводит. Может принимать значения:
+        <UL>
+          <LI><STRONG>Slow</STRONG> - добавляется один такт 
+          <LI><STRONG>Fast</STRONG> - нет дополнительного такта ожидания 
+</LI></UL>
+        <LI><A name="SDRAM Speculative Read"><STRONG>SDRAM Speculative 
+        Read</STRONG></A> (SDRAM опережающее чтение) - разрешение этого 
+        параметра позволяет выдавать сигнал чтения немного ранее, чем адрес 
+        будет декодирован. Этот прием снижает общие затраты времени на операцию 
+        чтения. Другими словами, процессор будет инициировать сигнал чтения 
+        одновременно с генерацией того адреса, где находятся необходимые данные. 
+        Сигнал чтения воспринимается контроллером DRAM и, если параметр SDRAM 
+        Speculative Read разрешен, то контроллер выдаст сигнал чтения до 
+        завершения декодирования адреса. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Spread Spectrum Modulated">Spread Spectrum 
+        Modulated</A> </STRONG>(Спред модулированного спектра) - разрешение 
+        этого параметра позволяет уменьшить электромагнитное излучение от 
+        компьютера за счет уменьшения значения выбросов сигнала тактового 
+        генератора. Уменьшение может достигать 6%. Следует заметить, что это 
+        может отрицательно отразиться на работе чувствительных к форме сигнала 
+        устройств, например, жестких дисках с интерфейсом Fast Wide SCSI, 
+        поэтому параметр рекомендуется разрешать только при испытаниях 
+        компьютеров на электромагнитную совместимость. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <P><STRONG>Установка параметров для кэширования</STRONG> 
+      <UL>
+        <LI><A name="System BIOS Casheable"><STRONG>System BIOS 
+        Casheable</STRONG> (кэширование области BIOS системы)</A> - Разрешение 
+        этого параметра приводит к появлению возможности кэширования области 
+        памяти по адресам системного BIOS с F0000H по FFFFFH в кэш-память. 
+        Параметр будет использован только в том случае, если использование 
+        кэш-памяти разрешено в разделе BIOS Features Setup. Если какая-либо 
+        программа попытается выполнить операцию записи в эти адреса, то система 
+        выдаст сообщение об ошибке. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Video BIOS Cacheable"><STRONG>Video BIOS 
+        Cacheable</STRONG></A> (кэширование области BIOS видекарты) - Разрешение 
+        этого параметра приводит к появлению возможности кэширования области 
+        памяти по адресам BIOS видеокарты с C0000H по C7FFFH в кэш-память. 
+        Параметр будет использован только в том случае, если использование 
+        кэш-памяти разрешено в разделе BIOS Features Setup. Если какая-либо 
+        программа попытается выполнить операцию записи в эти адреса, то система 
+        выдаст сообщение об ошибке. Может принимать значения:
+        <UL type=circle>
+          <LI type=circle><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <H4>Конфигурирование шин PCI, AGP, портов ввода/вывода и установка 
+      параметров IDE контроллера</H4>
+      <UL>
+        <LI><A name="Video Memory Cache Mode"><STRONG>Video Memory Cache 
+        Mode</STRONG></A> (Режим кэширования для видеопамяти) - параметр 
+        действителен только для процессоров архитектуры Pentium Pro (Pentium II, 
+        Deshutes и т.п.). В процессоре Pentium Pro была предусмотрена 
+        возможность изменять режим кэширования в зависимости от конкретной 
+        области памяти через специальные внутренние регистры, называемые Memory 
+        Type Range Registers - MTRR. С помощью этих регистров для конкретной 
+        области памяти могут быть установлены режимы UC (uncached - не 
+        кэшируется), WC (write combining - объединенная запись), WP (write 
+        protect - защита от записи), WT (write through - сквозная запись) и WB 
+        (write back - обратная запись). Установка режима USWC (uncached, 
+        speculative write combining - не кэшировать, режим объединенной записи) 
+        позволяет значительно ускорить вывод данных через шину PCI на видеокарту 
+        (до 90 MB/c вместо 8 MB/c). Следует учесть, что видеокарта должна 
+        поддерживать доступ к своей памяти в диапазоне от A0000 - BFFFF (128 kB) 
+        и иметь линейный буфер кадра. Поэтому лучше установить режим USWC, но в 
+        случае возникновения каких-либо проблем (система может не загрузиться) 
+        установить значение по умолчанию UC. Может принимать значения:
+        <UL type=circle>
+          <LI type=circle><STRONG>UC</STRONG> - uncached - не кэшируется 
+          <LI><STRONG>USWC</STRONG> - uncached, speculative write combining - не 
+          кэшировать, режим объединенной записи. </LI></UL>
+        <LI><STRONG><A name="Graphics Aperture Size">Graphics Aperture Size</A> 
+        </STRONG>(размер графической апертуры для AGP) - в этом параметре 
+        указывается максимальный размер области памяти для использования 
+        видеокартой с интерфейсом AGP. Значение по умолчанию, устанавливаемое по 
+        включению питания или сбросу, 4 MB. После инициализации BIOS'ом &nbsp; 
+        принимает значение, выбранное производителем материнской платы (как 
+        правило, 64 MB). Разрешенный ряд значений графической апертуры 4 MB, 8 
+        MB, 16 MB, 32 MB, 64 MB, 128 MB и 256 MB.&nbsp; 
+        <LI><A name="PCI 2.1 Support"><STRONG>PCI 2.1 Support</STRONG></A> 
+        (поддержка спецификации шины PCI 2.1) - при разрешении этого параметра 
+        поддерживаются возможности спецификации 2.1 шины PCI. Спецификация 2.1 
+        имеет два основных отличия от 2.0 - максимальная тактовая частота шины 
+        увеличена до 66 MHz и вводится механизм моста PCI - PCI, позволяющий 
+        снять ограничение спецификации 2.0, согласно которой допускается 
+        установка не более 4-х устройств на шине. Запрещать этот параметр имеет 
+        смысл только при возникновении проблем после установки PCI платы (как 
+        правило, они возникают только с достаточно старыми платами). Может 
+        принимать значения:
+        <UL type=circle>
+          <LI type=circle><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name=8BitRecoveryTime><STRONG>8 Bit I/O Recovery Time</STRONG> 
+        (время восстановления для 8-ми разрядных устройств)</A> - Параметр 
+        измеряется в тактах процессора, и определяет, какую задержку система 
+        будет устанавливать после выдачи запроса на чтение/запись устройства 
+        (или, как принято у Intel - порта) ввода/вывода. Эта задержка 
+        необходима, так как цикл чтения/записи для устройств ввода/вывода 
+        существенно дольше, чем для памяти. Кроме этого 8-ми разрядные 
+        устройства ввода/вывода сами по себе, как правило, медленнее 16-ти 
+        разрядных устройств ввода/вывода. Значение этого параметра по умолчанию 
+        1 и его следует увеличивать только в случае установки в компьютер 
+        какого-либо медленного 8-ми разрядного устройства. Может принимать 
+        значения от 1 до 8 тактов. 
+        <LI><A name=16BitRecoveryTime><STRONG>16 Bit I/O Recovery Time</STRONG> 
+        (время восстановления для 16-ми разрядных устройств)</A> - Параметр 
+        измеряется в тактах процессора, и определяет, какую задержку система 
+        будет устанавливать после выдачи запроса на чтение/запись устройства 
+        (или, как принято у Intel - порта) ввода/вывода. Эта задержка 
+        необходима, так как цикл чтения/записи для устройств ввода/вывода 
+        существенно дольше, чем для памяти. Значение этого параметра по 
+        умолчанию 1 и его следует увеличивать только в случае установки в 
+        компьютер какого-либо медленного 16-ти разрядного устройства. Может 
+        принимать значения от 1 до 4 тактов. 
+        <LI><A name=Memory_Hole><STRONG>Memory Hole At 15M-16M</STRONG></A> 
+        ("дырка" в памяти внутри 15-го мегабайта памяти) - Разрешение этого 
+        параметра позволяет обращаться к устройствам ввода/вывода как к памяти и 
+        за счет этого увеличить скорость доступа к таким устройствам. Для 
+        функционирования этого механизма необходимо исключить для всех обычных 
+        программ возможность использования определенной области памяти (15-ый 
+        мегабайт), что и делает BIOS при разрешении этого параметра. Разрешать 
+        этот параметр следует в том случае, если это требуется в документации на 
+        установленную в данном компьютере плату. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name=Peer_Concurrancy><STRONG>Peer Concurrancy</STRONG></A> 
+        (паралельная работа) - Этот параметр разрешает или запрещает 
+        одновременную работу нескольких устройств на шине PCI. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name=SpecialFeatures><STRONG>Chipset Special 
+        Features</STRONG></A> (специальные возможности chipset) - Данный 
+        параметр разрешает/запрещает все новые функции, появившиеся в наборах 
+        HX, VX или TX по сравнению с FX. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled </STRONG>- запрещено </LI></UL>
+        <LI><A name="Passive Release"><STRONG>Passive Release</STRONG></A> 
+        (пассивное разделение) - Этот параметр включает/выключает механизм 
+        паралельной работы шин ISA и PCI. Если этот параметр разрешен, то доступ 
+        процессора к шине PCI позволен во время пассивного разделения. 
+        Необходимость запрещения данного параметра может возникнуть при 
+        использовании плат ISA, активно использующих каналы DMA. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="PCI Delayed Transaction"><STRONG>PCI Delayed 
+        Transaction</STRONG></A> (задержанная транзакция на PCI) - Присутствие 
+        этого параметра означает, что на материнской плате есть встроенный 
+        32-битный буфер для поддержки удлинненного цикла обмена на PCI. Если 
+        этот параметр разрешен, то доступ к шине PCI разрешен во время доступа к 
+        8-ми разрядным устройствам на шине ISA. Это существенно увеличивает 
+        производительность, так как цикл такого обращения на ISA занимает 50-60 
+        тактов шины PCI. При установке в компьютер платы, не поддерживающей 
+        спецификации PCI 2.1, этот параметр следует запретить. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Parallel Port Mode (ECP+EPP)">Parallel Port Mode 
+        (ECP+EPP)</A></STRONG> (режим работы параллельного порта) - параметр 
+        позволяет задать режимы работы параллельного порта в соответствии со 
+        стандартом IEEE 1284. Следует учитывать, что скорость обмена для 
+        некоторых устройств может быть существенно увеличена при правильной 
+        установке режима работы порта принтера, например, для внешних устройств 
+        хранения информации типа Iomega ZIP Drive LPT. Может принимать значения:
+        <UL>
+          <LI><STRONG>Normal</STRONG> - обычный интерфейс принтера, также 
+          называется SPP 
+          <LI><STRONG>ECP</STRONG> - порт с расширенными возможностями 
+          <LI><STRONG>EPP</STRONG> - расширенный принтерный порт 
+          <LI><STRONG>ECP + EPP</STRONG>- можно использовать оба режима </LI></UL>
+        <LI><STRONG><A name="Parallel Port Mode">Parallel Port Mode</A> 
+        </STRONG>(режим работы параллельного порта) - параметр аналогичен <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Parallel Port Mode (ECP+EPP)">Parallel 
+        Port Mode (ECP+EPP)</A>, но с некоторыми расширениями. Дело в том, что 
+        существуют устройства, выполненные с отклонениями от стандарта IEEE 
+        1284, например, некоторые платы от фирмы Xircom. Для совместимости с 
+        такими платами в некоторых BIOS существуют параметры установки версии 
+        варианта ECP+EPP порта. Какую версию выбрать - необходимо "выловить" из 
+        документации на подключаемое устройство или проверить экспериментально. 
+        Может принимать значения:
+        <UL>
+          <LI><STRONG>SPP</STRONG> - обычный интерфейс принтера, также 
+          называется SPP 
+          <LI><STRONG>ECP</STRONG> - порт с расширенными возможностями 
+          <LI><STRONG>EPP</STRONG> - расширенный принтерный порт 
+          <LI><STRONG>EPP 1.9</STRONG> - версия 1.9 исполнения интерфейса 
+          <LI><STRONG>EPP 1.7</STRONG> - версия 1.7 исполнения интерфейса 
+        </LI></UL>
+        <LI><A name="ECP DMA Select"><STRONG>ECP DMA Select</STRONG></A>(выбор 
+        канала DMA для режима ECP) - параметр появляется только при разрешении 
+        режима ECP или ECP+EPP в <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#Parallel Port Mode (ECP+EPP)">Parallel 
+        Port Mode (ECP+EPP)</A>. Для нормальной поддержки режима ECP требуется 
+        задействовать канал DMA, который выбирается из каналов 1 или 3. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>1</STRONG> - канал 1 
+          <LI><STRONG>3 </STRONG>- канал 3 
+          <LI><STRONG>Disabled</STRONG> - запрещено использовать DMA </LI></UL>
+        <LI><STRONG><A name=Onboard_PCI_IDE_Enable>Onboard PCI IDE 
+        Enable</A></STRONG> (разрешение работы интегрированного контроллера IDE) 
+        - Этот параметр управляет разрешением/запрещением работы каждого из двух 
+        каналов контроллера IDE, установленного на материнской плате. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Primary</STRONG> - разрешена работа только первого канала 
+          <LI><STRONG>Secondary</STRONG> - разрешена работа только второго 
+          канала 
+          <LI><STRONG>Both</STRONG> - разрешена работа обеих каналов 
+          <LI><STRONG>Disable</STRONG> - запрещена работа обеих каналов </LI></UL>
+        <LI><A name="Onboard FDC Controller"><STRONG>Onboard FDC 
+        Controller</STRONG></A> (разрешение работы контроллера накопителя на 
+        гибких дисках) - Этот параметр управляет разрешением/запрещением работы 
+        контроллера накопителя на гибких дисках, установленного на материнской 
+        плате. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enable</STRONG> - контроллер разрешен 
+          <LI><STRONG>Disable</STRONG> - контроллер запрещен </LI></UL>
+        <LI><A name=IDE_PIO><STRONG>Выбор режима работы каждого диска</STRONG> 
+        </A>- Эти четыре параметра позволяют устанавливать режимы работы каждого 
+        диска индивидуально или разрешить BIOS автоматическую установку самого 
+        высокоскоростного режима для диска. Для каждого диска допустимые 
+        параметры одинаковы. Например, для IDE 0 Master Mode допустимые 
+        значения: 0, 1, 2, 3, 4 и AUTO. Параметр UDMA может иметь значение Auto 
+        или Disable. </LI></UL>
+      <H4><A name=PCI_CONF>Раздел PnP/PCI Configuration Setup</A></H4>
+      <UL>
+        <LI><STRONG><A name="PNP OS Installed">PNP OS Installed</A> 
+        </STRONG>(установлена ли операционная система с поддержкой режима 
+        Plug&amp;Play?) - Установить <STRONG>Yes</STRONG>, если операционная 
+        система поддерживает Plug&amp;Play (например, Windows 95) и 
+        <STRONG>No</STRONG> в противном случае. 
+        <LI><STRONG><A name="Resources Controlled By">Resources Controlled 
+        By</A> </STRONG>(как управляются ресурсы) - Если выбрано 
+        <STRONG>AUTO</STRONG>, то BIOS сам автоматически назначит прерывания и 
+        каналы DMA всем устройствам, подключенным к шине PCI и эти параметры не 
+        будут появляться на экране. В противном случае все эти параметры следует 
+        установить вручную. В некоторых вариантах BIOS этот параметр может 
+        устанавливаться индивидуально для каждого PCI слота и выглядеть так: 
+        <STRONG>Slot 1 IRQ</STRONG>,<STRONG> Slot 2 IRQ</STRONG> и т.д. 
+        <LI><A name="Reset Configuration Data"><STRONG>Reset Configuration 
+        Data</STRONG></A> (сброс конфигурационных данных) - Рекомендуется 
+        устанавливать его в <STRONG>Disabled</STRONG>. При установке 
+        <STRONG>Enabled</STRONG> BIOS будет очищать область Extended System 
+        Configuration Data (Расширенные данные о конфигурации системы - ESCD), в 
+        которой хранятся данные о конфигурировании BIOS`ом системы, поэтому 
+        возможны аппаратные конфликты у "брошенных" таким образом на произвол 
+        судьбы устройств. 
+        <LI><A name="IRQ n Assigned to"><STRONG>IRQ n Assigned to</STRONG></A> 
+        (прерывание с номером n назначено на...) - Каждому прерыванию системы 
+        может быть назначен один из следующих типов устройств:
+        <UL>
+          <LI><STRONG>Legacy ISA</STRONG> (классические ISA карты) - Обычные 
+          карты для ISA, такие как модемы или звуковые карты без поддержки 
+          Plug&amp;Play. Эти карты требуют назначения прерываний в соответствии 
+          с документацией на них. 
+          <LI><STRONG>PCI/ISA PnP</STRONG> (устройства для шины PCI или 
+          устройства для шины ISA с поддержкой Plug&amp;Play) - этот параметр 
+          устанавливается только для устройств на шине PCI или ISA карт с 
+          поддержкой Plug&amp;Play. </LI></UL>
+        <LI><STRONG><A name="DMA n Assigned to">DMA n Assigned to</A> 
+        </STRONG>(канал DMA с номером n назначен на...) - Каждому каналу DMA 
+        системы может быть назначен один из следующих типов устройств:
+        <UL>
+          <LI><STRONG>Legacy ISA</STRONG> (классические ISA карты) - Обычные 
+          карты для ISA, такие как модемы или звуковые карты без поддержки 
+          Plug&amp;Play. Эти карты требуют назначения каналов DMA в соответствии 
+          с документацией на них. 
+          <LI><STRONG>PCI/ISA PnP</STRONG> (устройства для шины PCI или 
+          устройства для шины ISA с поддержкой Plug&amp;Play) - этот параметр 
+          устанавливается только для устройств на шине PCI или ISA карт с 
+          поддержкой Plug&amp;Play. </LI></UL>
+        <LI><STRONG><A name="PCI IRQ Activated by">PCI IRQ Activated by</A> 
+        </STRONG>(прерывания активизируются по ...) - Параметр может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Level</STRONG> (уровень) - контроллер прерываний реагирует 
+          только на уровень сигнала. 
+          <LI><STRONG>Edge </STRONG>(перепад) - контроллер прерываний реагирует 
+          только на перепад уровня сигнала. </LI></UL>
+        <LI><A name="PCI IDE IRQ Map to"><STRONG>PCI IDE IRQ Map to</STRONG></A> 
+        (прерывания контроллера IDE на PCI отображаются на...) - позволяет 
+        освободить прерывания, занимаемые контроллером IDE на шине PCI в случае 
+        его отсутствия (или запрещения) на материнской плате и отдать их 
+        устройствам на шине ISA. Стандартные прерывания для ISA - IRQ 14 для 
+        первого канала и IRQ 15 для второго канала. Может принимать значения
+        <UL>
+          <LI><STRONG>PCI IDE IRQ mapping</STRONG> (используется для PCI IDE) 
+          <LI><STRONG>PC AT (ISA) </STRONG>(используется для ISA) </LI></UL>
+        <LI><A name="PCI Slot IDE 2nd Channel"><STRONG>PCI Slot IDE 2nd 
+        Channel</STRONG></A> (2-ой канал контроллера PCI IDE) - разрешает или 
+        запрещает 2-ой канал контроллера IDE. Запрещение параметра используется 
+        для освобождения прерывания, занятого 2-ым каналом в том случае, если ко 
+        второму каналу ничего не подключено.Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="IRQ n Used By ISA">IRQ n Used By ISA</A> 
+        </STRONG>(прерывание n используется на шине ISA) - Параметр совпадает с 
+        <A 
+        href="http://pavlodar2000.narod.ru/setup.htm#IRQ n Assigned to"><STRONG>IRQ 
+        n Assigned to</STRONG></A> и может принимать значения:
+        <UL>
+          <LI><STRONG>No/ICU </STRONG>(нет/конфигурационная утилита для ISA) - 
+          если установлено это значение, то BIOS может распоряжаться этим 
+          прерыванием по своему усмотрению. Для DOS настройка параметров в этом 
+          случае может также выполняться с помощью программы ISA Configuration 
+          Utility от Intel. 
+          <LI><STRONG>Yes</STRONG> (да) - означает принудительное освобождение 
+          прерывания для какой-либо карты на шине ISA, не поддерживающей режим 
+          Plug&amp;Play. Рекомендуется всегда указывать Yes для таких карт и 
+          нужных им прерываний, так как в противном случае BIOS может назначить 
+          прерывание, жестко используемое какой-либо картой на ISA, другой 
+          карте, что может вызвать даже прекращение нормальной работы 
+          компьютера. </LI></UL>
+        <LI><STRONG><A name="DMA n Used By ISA">DMA n Used By ISA</A> 
+        </STRONG>(канал DMA n используется на шине ISA) - Параметр совпадает с 
+        <STRONG><A 
+        href="http://pavlodar2000.narod.ru/setup.htm#DMA n Assigned to">DMA n 
+        Assigned to</A> </STRONG>и может принимать значения:
+        <UL>
+          <LI><STRONG>No/ICU </STRONG>(нет/конфигурационная утилита для ISA) - 
+          если установлено это значение, то BIOS может распоряжаться этим 
+          каналом DMA по своему усмотрению. Для DOS настройка параметров в этом 
+          случае может также выполняться с помощью программы ISA Configuration 
+          Utility от Intel. 
+          <LI><STRONG>Yes</STRONG> (да) - означает принудительное освобождение 
+          канала DMA для какой-либо карты на шине ISA, не поддерживающей режим 
+          Plug&amp;Play. Рекомендуется всегда указывать Yes для таких карт и 
+          нужных им каналом DMA, так как в противном случае BIOS может назначить 
+          канал, жестко используемый какой-либо картой на ISA, другой карте, что 
+          может вызвать даже прекращение нормальной работы компьютера. </LI></UL>
+        <LI><A name="ISA MEM Block BASE"><STRONG>ISA MEM Block BASE</STRONG></A> 
+        (базовый адрес блока памяти для ISA) - Некоторые карты для шины ISA 
+        требуют доступа к памяти, расположенной на такой карте по определенным 
+        адресам. Поэтому и возникла необходимость в этом параметре BIOS. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>No/ICU </STRONG>(нет/ICU) - оставляет управление этим 
+          параметром на усмотрение BIOS или программы ICU. 
+          <LI><STRONG>C800</STRONG>, <STRONG>CC00</STRONG>, 
+          <STRONG>D000</STRONG>, <STRONG>D400</STRONG>, <STRONG>D800</STRONG> и 
+          <STRONG>DC00 </STRONG>- указывается адрес блока памяти. Кроме этого, 
+          появляется дополнительный параметр <STRONG>ISA MEM Block SIZE</STRONG> 
+          (размер блока памяти), который нужен в том случае, если таких ISA карт 
+          несколько и этот параметр может принимать значения 
+          <STRONG>8K</STRONG>,<STRONG> 16K</STRONG>,<STRONG> 
+          32K</STRONG>,<STRONG> 64K</STRONG> </LI></UL>
+        <LI><STRONG><A name="Onboard AHA BIOS">Onboard AHA BIOS</A> 
+        </STRONG>(BIOS встроенного SCSI контроллера Adaptec) - параметр 
+        разрешает/запрещает выполнение BIOS встроенного SCSI контроллера и тем 
+        самым разрешает/запрещает работу встроенного SCSI контроллера. Параметр 
+        может принимать значения:
+        <UL>
+          <LI><STRONG>AUTO</STRONG> (автоматически) - Разрешен поиск SCSI 
+          контроллера Adaptec и запуск BIOS для него. 
+          <LI><STRONG>Disabled</STRONG> (запрещено) - Устанавливается в это 
+          значение при отсутствии SCSI карты. </LI></UL>
+        <LI><STRONG><A name="ONB AHA BIOS First">ONB AHA BIOS First</A></STRONG> 
+        (Запуск BIOS контроллера Adaptec первым) - параметр разрешает/запрещает 
+        запуск BIOS встроенного контроллера Adaptec до запуска любого другого 
+        SCSI контроллера. Может принимать значения:
+        <UL>
+          <LI><STRONG>Yes</STRONG> - разрешено 
+          <LI><STRONG>No</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="ONB SCSI SE Term.">ONB SCSI SE Term.</A> 
+        </STRONG>(Терминаторы встроенного контроллера SCSI) - параметр 
+        разрешает/запрещает подключение нагрузочных резисторов (терминаторов) на 
+        встроенном контроллере SCSI. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="ONB SCSI LVD Term."><STRONG>ONB SCSI LVD Term.</STRONG></A> 
+        (Терминаторы встроенного контроллера SCSI LVD) - параметр 
+        разрешает/запрещает подключение нагрузочных резисторов (терминаторов) на 
+        встроенном контроллере SCSI LVD. Управление этим параметром позволяет 
+        увеличить длину соединительного SCSI кабеля до 25 метров. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="SYMBIOS SCSI BIOS">SYMBIOS SCSI BIOS</A> 
+        </STRONG>или<STRONG> NCR SCSI BIOS </STRONG>- Разрешение на поиск SCSI 
+        контроллера на базе микросхемы NCR 810, используемого, например, в карте 
+        ASUS SC-200. Параметр может принимать значения:
+        <UL>
+          <LI><STRONG>AUTO</STRONG> (автоматически) - Разрешен поиск SCSI 
+          контроллера и запуск BIOS для него. 
+          <LI><STRONG>Disabled</STRONG> (запрещено) - Устанавливается в это 
+          значение при отсутствии SCSI карты. </LI></UL>
+        <LI><A name="PCI Latency Timer"><STRONG>PCI Latency Timer</STRONG></A> 
+        (таймер задержки на PCI) - Устанавливает максимальное время (в тактах 
+        частоты шины) в течении которого устройство на шине PCI может удерживать 
+        шину в том случае, если другое устройство требует доступа к шине. 
+        Допустимый диапазон изменения этого параметра - от 16 до 128 с шагом, 
+        кратным 8. Значение параметра следует изменять осторожно, так как оно 
+        зависит от конкретной реализации материнской платы. 
+        <LI><STRONG><A name="USB IRQ">USB IRQ</A> </STRONG>(прерывание шины USB) 
+        - параметр разрешает или запрещает назначение прерывания для контроллера 
+        шины USB. Поскольку в компьютере часто не хватает прерываний, разрешать 
+        этот параметр следует только при наличии устройства на шине USB в 
+        системе. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="VGA BIOS Sequence"><STRONG>VGA BIOS 
+        Sequence</STRONG></A>&nbsp; (последовательность загрузки BIOS видеокарт) 
+        - определяет, BIOS какой видеокарты будет загружаться первым, AGP 
+        видеокарта или PCI. Устанавливать значение этого параметра имеет смысл 
+        только в случае установки в компьютере нескольких видеокарт. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>PCI/AGP</STRONG> - сначала BIOS PCI видеокарты, затем AGP 
+          <LI><STRONG>AGP/PCI</STRONG> - сначала BIOS AGP видеокарты, затем PCI 
+          </LI></UL>
+        <LI><STRONG><A name="USB Keybord Support Via">USB Keybord Support 
+        Via</A> </STRONG>(поддержка USB клавиатуры через ...) - параметр 
+        позволяет установить, на кого возлагается поддержка USB клавиатуры - на 
+        BIOS или операционную систему. Поскольку не все операционные системы 
+        поддерживают USB, рекомендуется оставлять значение BIOS. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>OS</STRONG> - поддержка через операционную систему 
+          <LI><STRONG>BIOS</STRONG> - поддержка через BIOS </LI></UL></LI></UL>
+      <H3><A name=PM></A>Раздел Power Management Setup</H3>
+      <UL>
+        <LI><STRONG><A name="Power Management">Power Management</A> 
+        </STRONG>(управление энергопотреблением) - позволяет либо разрешать 
+        BIOS'у снижать энергопотребление компьютера, если за ним не работают, 
+        либо запрещать. Может принимать значения:
+        <UL>
+          <LI><STRONG>User Define </STRONG>(определяется пользователем) - при 
+          установке этого параметра вы можете самостоятельно установить время 
+          перехода в режим пониженного энергопотребления. 
+          <LI><STRONG>Min Saving </STRONG>(минимальное энергосбережение) - при 
+          выборе этого параметра компьютер будет переходить в режим пониженного 
+          энергопотребления через время от 40 мин. до 2 часов (зависит от 
+          конкретного BIOS материнской платы) 
+          <LI><STRONG>Max Saving </STRONG>(максимальное энергосбережение) - 
+          компьютер перейдет в режим пониженного энергопотребления через 10 - 30 
+          с. после прекращения работы пользователя с ним. 
+          <LI><STRONG>Disable </STRONG>(запрещение энергосбережения) - запрещает 
+          режим энергосбережения. </LI></UL>
+        <LI><STRONG><A name="ACPI function">ACPI function</A> 
+        </STRONG>(функционирование ACPI) - разрешает или запрещает поддержку 
+        BIOS стандарта ACPI. Следует помнить, что по состоянию на конец 1998 
+        года только Windows 98 поддерживает этот стандарт. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Video Off Option"><STRONG>Video Off Option</STRONG></A> (в 
+        каком режиме выключать монитор) - позволяет устанавливать, на какой 
+        стадии "засыпания" компьютера переводить монитор в режим пониженного 
+        энергопотребления. Может принимать значения: 
+        <UL>
+          <LI><STRONG>Susp, Stby -&gt; Off </STRONG>(выключение в режиме Suspend 
+          <STRONG>И</STRONG> Standby) - монитор перейдет в режим пониженного 
+          энергопотребления при наступлении либо режима Suspend, либо Standby. 
+          <LI><STRONG>All modes -&gt; Off</STRONG> (выключение во всех режимах) 
+          - монитор будет переведен в режим пониженного энергопотребления в 
+          любом режиме. 
+          <LI><STRONG>Always On </STRONG>(всегда включен) - монитор никогда не 
+          будет переведен в режим пониженного энергопотребления 
+          <LI><STRONG>Suspend -&gt; Off </STRONG>(выключение в режиме Suspend) - 
+          монитор перейдет в режим пониженного энергопотребления при наступлении 
+          режима Suspend. </LI></UL>
+        <LI><STRONG><A name="Video Off Method">Video Off Method</A> 
+        </STRONG>(способы выключения монитора)<STRONG> </STRONG>- 
+        устанавливается способ перехода монитора в режим пониженного 
+        энергопотребления. Может принимать значения: 
+        <UL>
+          <LI><STRONG>DPMS OFF </STRONG>- снижение энергопотребления монитора до 
+          минимума 
+          <LI><STRONG>DPMS Reduce ON </STRONG>- монитор включен и может 
+          использоваться 
+          <LI><STRONG>DPMS Standby </STRONG>- монитор в режиме малого 
+          энергопотребления 
+          <LI><STRONG>DPMS Suspend</STRONG> - монитор в режиме сверхмалого 
+          энергопотребления 
+          <LI><STRONG>Blank Screen</STRONG> - экран пуст, но монитор потребляет 
+          полную мощность 
+          <LI><STRONG>V/H SYNC+Blank</STRONG> - снимаются сигналы разверток - 
+          монитор переходит в режим наименьшего энергопотребления. </LI></UL>
+        <LI><A name="Suspend Switch"><STRONG>Suspend Switch</STRONG></A> 
+        (переключатель режима Suspend) - параметр разрешает или запрещает 
+        переход в режим suspend (временной остановки) с помощью кнопки на 
+        системном блоке. Для этого необходимо соединить джампер SMI на 
+        материнской плате с кнопкой на лицевой панели. Как правило, для этого 
+        используется либо специальная кнопка Sleep, либо кнопка Turbo. Режим 
+        suspend является режимом максимального снижения энергопотребления 
+        компьютером. Может принимать значения: 
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Doze Speed"><STRONG>Doze Speed</STRONG></A> (частота 
+        процессора в режиме Doze) - определяет коэффициент деления тактовой 
+        частоты в режиме Doze (засыпание). </LI></UL>
+      <UL>
+        <LI><A name="Stby Speed"><STRONG>Stby Speed</STRONG></A> (частота 
+        процессора в режиме Standby) - определяет коэффициент деления тактовой 
+        частоты в режиме Standby (ожидания работы). </LI></UL>
+      <P><STRONG>PM Timers </STRONG>- в этой секции устанавливаются времена 
+      перехода в различные стадии снижения энергопотребления. 
+      <UL>
+        <LI><STRONG><A name="HDD Power Down">HDD Power Down</A> 
+        </STRONG>(выключение жесткого диска) - устанавливает либо время, через 
+        которое при отсутствии обращения жесткий диск будет выключен, либо 
+        запрещает такое выключение вообще. Параметр не оказывает влияние на 
+        диски SCSI. Может принимать значения:
+        <UL>
+          <LI>От 1 до 15 минут 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="Doze Mode"><STRONG>Doze Mode</STRONG></A> (режим засыпания) 
+        - устанавливает время перехода или запрещает переход в первую стадию 
+        снижения энергопотребления. Может принимать значения:
+        <UL>
+          <LI><STRONG>30 Sec</STRONG>,<STRONG> 1 Min</STRONG>,<STRONG> 2 
+          Min</STRONG>,<STRONG> 4 min</STRONG>,<STRONG> 8 Min</STRONG>,<STRONG> 
+          20 Min</STRONG>,<STRONG> 30 Min</STRONG>,<STRONG> 40 
+          Min</STRONG>,<STRONG> 1 Hour </STRONG>- время перехода (Sec - секунды, 
+          Min - минуты, Hour - час) 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Standby Mode">Standby Mode</A> </STRONG>(режим 
+        ожидания работы) - устанавливает время перехода или запрещает переход во 
+        вторую стадию снижения энергопотребления. Может принимать значения:
+        <UL>
+          <LI><STRONG>30 Sec</STRONG>,<STRONG> 1 Min</STRONG>,<STRONG> 2 
+          Min</STRONG>,<STRONG> 4 min</STRONG>,<STRONG> 8 Min</STRONG>,<STRONG> 
+          20 Min</STRONG>,<STRONG> 30 Min</STRONG>,<STRONG> 40 
+          Min</STRONG>,<STRONG> 1 Hour </STRONG>- время перехода (Sec - секунды, 
+          Min - минуты, Hour - час) 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Suspend Mode">Suspend Mode</A> </STRONG>(режим 
+        временной остановки) - устанавливает время перехода или запрещает 
+        переход в третью стадию снижения энергопотребления. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>30 Sec</STRONG>,<STRONG> 1 Min</STRONG>,<STRONG> 2 
+          Min</STRONG>,<STRONG> 4 min</STRONG>,<STRONG> 8 Min</STRONG>,<STRONG> 
+          20 Min</STRONG>,<STRONG> 30 Min</STRONG>,<STRONG> 40 
+          Min</STRONG>,<STRONG> 1 Hour </STRONG>- время перехода (Sec - секунды, 
+          Min - минуты, Hour - час) 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <P><STRONG>PM Events </STRONG>- в этой секции указываются те прерывания, 
+      от обращения к которым компьютер должен "просыпаться", если к устройствам, 
+      использующим эти прерывания, есть обращения. 
+      <UL>
+        <LI><A name="IRQ 3 (Wake-up)"><STRONG>IRQ 3 (Wake-up)</STRONG></A> - 
+        разрешение этого параметра приведет к "пробуждению" компьютера от модема 
+        или мыши, подключенных к COM2. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 4 (Wake-up)"><STRONG>IRQ 4 (Wake-up)</STRONG></A> - 
+        разрешение этого параметра приведет к "пробуждению" компьютера от модема 
+        или мыши, подключенных к COM1. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 8 (Wake-up)"><STRONG>IRQ 8 (Wake-up)</STRONG></A> - 
+        разрешение этого параметра приведет к "пробуждению" компьютера от часов 
+        реального времени. Рекомендуется оставить его запрещенным, так как 
+        некоторые программы могут использовать функцию "будильника" часов 
+        компьютера для своих целей. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 12 (Wake-up)"><STRONG>IRQ 12 (Wake-up)</STRONG></A> - 
+        разрешение этого параметра приведет к "пробуждению" компьютера от мыши, 
+        подключенной к порту PS/2. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <P>В следующей секции указываются те устройства, при активности которых 
+      компьютер "засыпать" не должен. 
+      <UL>
+        <LI><A name="IRQ 3 (COM2)"><STRONG>IRQ 3 (COM2)</STRONG></A> - при 
+        разрешении этого параметра компьютер не "засыпает", если подключенное к 
+        порту COM2 устройство используется. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 4 (COM1)"><STRONG>IRQ 4 (COM1)</STRONG></A> - при 
+        разрешении этого параметра компьютер не "засыпает", если подключенное к 
+        порту COM1 устройство используется. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 5 (LPT2)"><STRONG>IRQ 5 (LPT2)</STRONG></A> - при 
+        разрешении этого параметра компьютер не "засыпает", если подключенное к 
+        порту LPT2 устройство (как правило, принтер) используется. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 6 (Floppy Disk)"><STRONG>IRQ 6 (Floppy 
+        Disk)</STRONG></A> - при разрешении этого параметра компьютер не 
+        "засыпает", если к накопителю на гибких дисках происходит обращение. 
+        Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 7 (LPT1)"><STRONG>IRQ 7 (LPT1)</STRONG></A> - при 
+        разрешении этого параметра компьютер не "засыпает", если подключенное к 
+        порту LPT2 устройство (как правило, принтер) используется. Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 8 (RTC Alarm)"><STRONG>IRQ 8 (RTC Alarm)</STRONG></A> - 
+        при разрешении этого параметра компьютер не "засыпает", если RTC (часы 
+        реального времени) используются как таймер. Рекомендуется оставить его 
+        запрещенным, так как некоторые программы могут использовать функцию 
+        "будильника" часов компьютера для своих целей. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 9 (IRQ2 Redir)"><STRONG>IRQ 9 (IRQ2 Redir)</STRONG></A> 
+        - при разрешении этого параметра компьютер не "засыпает", если 
+        подключенное к порту COM2 устройство используется. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 10 (Reserved)"><STRONG>IRQ 10 (Reserved)</STRONG></A> - 
+        при разрешении этого параметра компьютер не "засыпает", если устройство, 
+        занимающее 10 прерывание, используется. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 11 (Reserved)"><STRONG>IRQ 11 (Reserved)</STRONG></A> - 
+        при разрешении этого параметра компьютер не "засыпает", если устройство, 
+        занимающее 11 прерывание, используется. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 12 (PS/2 Mouse)"><STRONG>IRQ 12 (PS/2 
+        Mouse)</STRONG></A> - при разрешении этого параметра компьютер не 
+        "засыпает", если подключенное к порту COM2 устройство используется. 
+        Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 13 (Coprocessor)"><STRONG>IRQ 13 
+        (Coprocessor)</STRONG></A> - при разрешении этого параметра компьютер не 
+        "засыпает", если сопроцессор используется. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 14 (Hard Disk)"><STRONG>IRQ 14 (Hard Disk)</STRONG></A> 
+        - при разрешении этого параметра компьютер не "засыпает", если к 
+        жесткому диску на первом канале IDE есть обращения. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><A name="IRQ 15 (Reserved)"><STRONG>IRQ 15 (Reserved)</STRONG></A> - 
+        при разрешении этого параметра компьютер не "засыпает", если к жесткому 
+        диску или CD-ROM на втором канале IDE есть обращения. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <P><STRONG>Power Up Control </STRONG>- параметры в этой секции определяют 
+      виды управления источником питания и применяются для источников питания в 
+      стандарте ATX и материнских плат, допускающих подключение к такому 
+      источнику. 
+      <UL>
+        <LI><A name="PWR Button   < 4 Secs"><STRONG>PWR Button &lt; 4 
+        Secs</STRONG></A> <STRONG>(он же Soft-of By PWR-BTTN)</STRONG> (кнопка 
+        питания нажата менее 4 секунд) - управляет функциями кнопки Power на 
+        системном блоке компьютера. Может принимать значения:
+        <UL>
+          <LI><STRONG>Soft Off</STRONG> (программное выключение) - кнопка 
+          работает как обычная кнопка включения/выключения питания компьютера, 
+          но при этом разрешается программное выключение компьютера (например, 
+          при выходе из Windows 95). 
+          <LI><STRONG>Suspend </STRONG>(временная остановка) - при нажатии на 
+          кнопку питания на время менее 4 секунд компьютер переходит в стадию 
+          Suspend снижения энергопотребления. 
+          <LI><STRONG>No Function </STRONG>(нет функций) - кнопка Power 
+          становится обычной кнопкой включения/выключения питания. </LI></UL>
+        <LI><STRONG><A name="PWR Up On Modem Act">PWR Up On Modem Act</A> (он же 
+        Resume by Ring)</STRONG> (включение питания при звонке на модем) - 
+        разрешение этого параметра поволяет включить компьютер при звонке на 
+        модем. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="IRQ8 Resume by Suspend">IRQ8 Resume by Suspend</A> 
+        </STRONG>(пробуждение по IRQ8) - разрешение этого параметра позволяет 
+        "разбудить" компьютер, соответствующим образом запрограммировав Alarm 
+        Time (время тревоги) в Real Time Clock (RTC - часы реального времени), 
+        так как сигнал от RTC заведен на IRQ8. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="ZZ Active In Suspend">ZZ Active In Suspend</A> 
+        </STRONG>(активность сигнала ZZ в режиме Suspend) - контроллер на 
+        материнской плате имеет сигнал ZZ, эмулирующий в режиме Suspend 
+        (временной остановки) тактовую частоту 8.32 MHz. Как правило, в 
+        большинстве материнских плат этот сигнал не используется, но если в 
+        SETUP он есть, то следует придерживаться рекомендаций по его установке 
+        от производителя материнской платы. Может принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Wake On LAN">Wake On LAN</A> </STRONG>(Пробуждение 
+        от сети) - при разрешении этого параметра компьютер включается по 
+        сигналу от локальной сети. Такое включение возможно только при установке 
+        в компьютер сетевой карты, поддерживающей этот режим. Может принимать 
+        значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="AC PWR Loss Restart">AC PWR Loss Restart</A> 
+        </STRONG>(включить компьютер после пропадания питания) - разрешение 
+        этого параметра позволяет включить компьютер после пропадания питания. В 
+        противном случае после восстановления питания компьютер не включится и 
+        необходимо будет снова нажать кнопку подачи питания (Power). Может 
+        принимать значения:
+        <UL>
+          <LI><STRONG>Enabled</STRONG> - разрешено 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL>
+        <LI><STRONG><A name="Automatic Power Up">Automatic Power Up</A> 
+        </STRONG>(автоматическое включение) - используя этот параметр, можно 
+        включать компьютер ежедневно в указанное время или включить его в 
+        указанный день и час. Может принимать значения:
+        <UL>
+          <LI><STRONG>Everday</STRONG> (ежедневно) - при вводе времени компьютер 
+          будет включаться ежедневно в назначенное время. Время вводится в поле 
+          Time (hh:mm:ss) Alarm в порядке часы:минуты:секунды либо клавишами 
+          PgUp, PgDn, либо непосредственным вводом чисел. 
+          <LI><STRONG>By Date </STRONG>(по дате) - компьютер включится в 
+          заданный день и в заданное время. При выборе этого параметра 
+          появляется поле для ввода времени (такое же, как и для Everyday) и 
+          поле для ввода дня месяца Date of Month Alarm - день месяца - в этом 
+          поле вводится число в месяце. Это автоматически означает, что 
+          запрограммировать включение компьютера можно только внутри одного 
+          месяца. 
+          <LI><STRONG>Disabled</STRONG> - запрещено </LI></UL></LI></UL>
+      <P>В следующих секциях BIOS только сообщает характеристики некоторых 
+      устройств компьютера. Разрешение параметров в этих секциях позволяет 
+      отслеживать BIOS'у эти параметры и сообщать об их выходе за пределы 
+      допустимого. </P>
+      <P>Секция Fan Monitor (наблюдение за вентиляторами) 
+      <UL>
+        <LI><A name="Chassis Fan Speed (xxxxRPM)"><STRONG>Chassis Fan Speed 
+        (xxxxRPM)</STRONG></A> (наблюдение за скоростью вращения дополнительного 
+        вентилятора в корпусе компьютера) - если выбрано Ignore, то скорость 
+        вращения этого вентилятора отслеживаться не будет. Этот параметр будет 
+        индицироваться только при использовании специального вентилятора с 
+        дополнительным выводом, подключаемого к специальному разъему на 
+        материнской плате. В противном случае, при остановке или критическом 
+        уменьшении скорости вращения, BIOS будет выдавать сообщение на экране 
+        перед загрузкой операционной системы. 
+        <LI><A name="CPU Fan Speed (xxxxRPM)"><STRONG>CPU Fan Speed 
+        (xxxxRPM)</STRONG></A> (наблюдение за скоростью вращения вентилятора 
+        охлаждения процессора) - если выбрано Ignore, то скорость вращения этого 
+        вентилятора отслеживаться не будет. Этот параметр будет индицироваться 
+        только при использовании специального вентилятора с дополнительным 
+        выводом, подключаемого к специальному разъему на материнской плате. В 
+        противном случае, при остановке или критическом уменьшении скорости 
+        вращения, BIOS будет выдавать сообщение на экране перед загрузкой 
+        операционной системы. 
+        <LI><A name="Power Fan Speed (xxxxRPM)"><STRONG>Power Fan Speed 
+        (xxxxRPM)</STRONG></A> (наблюдение за скоростью вращения вентилятора 
+        блока питания) - если выбрано Ignore, то скорость вращения этого 
+        вентилятора отслеживаться не будет. В противном случае, при остановке 
+        или критическом уменьшении скорости вращения, BIOS будет выдавать 
+        сообщение на экране перед загрузкой операционной системы. Использование 
+        этого параметра возможно при наличии соответствующего блока питания. 
+        </LI></UL>
+      <P>Секция <A name="Thermal Monitor">Thermal Monitor</A> (наблюдение за 
+      температурой) - параметры изменению не подлежат.
+      <UL>
+        <LI><STRONG><A name="CPU Temperature">CPU Temperature</A> 
+        </STRONG>(температура процессора) - показывает темпераратуру процессора 
+        в градусах Цельсия и Фаренгейта. При выборе Ignore температура 
+        отслеживаться не будет. В противном случае, при критическом повышении 
+        температуры, BIOS будет выдавать сообщение на экране перед загрузкой 
+        операционной системы. 
+        <LI><STRONG><A name="MB Temperature">MB Temperature</A> 
+        </STRONG>(температура материнской платы) - показывает темпераратуру 
+        процессора в градусах Цельсия и Фаренгейта. При выборе Ignore 
+        температура отслеживаться не будет. В противном случае, при критическом 
+        повышении температуры, BIOS будет выдавать сообщение на экране перед 
+        загрузкой операционной системы. </LI></UL>
+      <CENTER></CENTER>
+      <P align=center>Секция <A name="Voltage Monitor">Voltage Monitor</A> 
+      (наблюдение за напряжениями питания). В этой секции индицируются как 
+      напряжения питания, подаваемые на материнскую плату источником питания, 
+      так и вырабатываемые на материнской плате. Разъяснения эти параметры не 
+      требуют, кроме VCORE - это напряжение питания ядра процессора. Это 
+      напряжение вырабатывается, как правило, на материнской плате. 
+      <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <A href="http://pavlodar2000.narod.ru/scilki.htm">&nbsp; 
+  Назад</A></P></TD></TR></TBODY></TABLE>
+<P align=center>&nbsp;</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</P>
+<P 
+align=center>&nbsp;</P><!-- ><!-- "><!-- '><!-- --></TEXTAREA></FORM></TITLE></COMMENT></A>
+<DIV></DIV></SPAN></ILAYER></LAYER></IFRAME></NOFRAMES></STYLE></NOSCRIPT></TABLE></SCRIPT></APPLET></FONT>
+<STYLE>#bn {
+	DISPLAY: block
+}
+#bt {
+	DISPLAY: block
+}
+</STYLE>
+
+<SCRIPT language=JavaScript 
+src="Описание настроек Setup BIOS.files/163"></SCRIPT>
+<!-- mailto:spm111@yandex.ru --></CENTER></BODY></HTML>

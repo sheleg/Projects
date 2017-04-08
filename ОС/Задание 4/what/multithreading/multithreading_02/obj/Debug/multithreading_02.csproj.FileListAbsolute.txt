@@ -1,0 +1,5 @@
+D:\Projects\Microsoft\C#\BSU\OS\multithreading\multithreading_02\bin\Debug\multithreading_02.exe
+D:\Projects\Microsoft\C#\BSU\OS\multithreading\multithreading_02\bin\Debug\multithreading_02.pdb
+D:\Projects\Microsoft\C#\BSU\OS\multithreading\multithreading_02\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Microsoft\C#\BSU\OS\multithreading\multithreading_02\obj\Debug\multithreading_02.exe
+D:\Projects\Microsoft\C#\BSU\OS\multithreading\multithreading_02\obj\Debug\multithreading_02.pdb
