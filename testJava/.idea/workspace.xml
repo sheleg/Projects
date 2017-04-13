@@ -2,70 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3059280-8bd4-48e6-b210-e8cb3234dbcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Лабораторная 5.zip1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/a.out" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/2_7" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/2_7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/3_50" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/3_50" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ОС/Лабораторная 2/Задание 2/test.exe" afterPath="$PROJECT_DIR$/../ОС/Лабораторная 2/Задание 2/test.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/2_7.cbp" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/2_7.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/CXX.includecache" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/build.make" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/depend.internal" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/depend.make" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/flags.make" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/2_7.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/main.cpp" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/2.7/output.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/2.7/output.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/manifest.mf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/nbproject/build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/nbproject/genfiles.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/nbproject/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/nbproject/project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/AnswerEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/AnswerListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/DemoFrame.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/DemoFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/Message.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/MessageBeanInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/MyButtonEditor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ УП/Lab9/src/bsu/fpmi/educational_practice/MyLabelEditor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Archive.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Геометрия/LINE&amp;PNT.PAS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Геометрия/Line&amp;Point/Line_and_point.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Геометрия/Line&amp;Point/Line_and_point.dof" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Геометрия/Line&amp;Point/Line_and_point.dpr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Геометрия/Line&amp;Point/Line_and_point.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Геометрия/Комментарии к LineAndPoint.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/01-Threads/01-CreateThread.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/01-Threads/02-BeginThreadEx.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/01-Threads/03-TerminateThread.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/01-Threads/04-SleepSuspendResume.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/01-Threads/test.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/02-ErrorHandling/01-1-ErrorMessageBox.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/02-ErrorHandling/01-2-TestForErrorMessageBox.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/02-ErrorHandling/02-CharToOem.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/02-ErrorHandling/03-1-CoutErrorMessage.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/02-ErrorHandling/03-2-TestForCoutErrorMessage.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/01-1-ConsoleProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/01-2-CreateConsoleProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/01-3-CreateConsoleProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/02-CreateProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/03-ExitProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/04-1-ConsoleProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/04-2-TerminateConsoleProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/05-ProcessPriorityClass.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/06-ThreadPriority.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/07-PriorityBoost.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/08-1-ConsoleProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/08-2-InheritHandle.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/08-3-SetHandleInformation.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/03-Process/08-4-DuplicateHandle.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/01-WaitForSingleObject.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/02-WaitForMultipleObjects.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/03-NonSyncThreads.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/04-CriticalSection.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/05-TryEnterCriticalSection.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/06-1-NonSyncThreads.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/06-2-NonSyncThreads.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/07-1-Mutex.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/07-2-Mutex.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/08-AutoEvents.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/09-ManualEvents.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/10-1-NamedEvent.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/10-2-NamedEvent.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/11-NonSyncThreads.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/12-Semaphore.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/13-1-NamedSemaphore.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Демонстрационные программы/04-Synchronization/13-2-NamedSemaphore.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Справочник/Polyanin A.D. Kratkii spravochnik dlya inzhenerov i studentov (M.1996.432c.).djvu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Справочник/WinDjView-0.5.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Теория_ver0.2.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Теория_ver0.2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/Теретич.часть к заданию  №2.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/лабораторная работа n2_ver0.4.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ОС/Задание 2/лабораторная работа n2_ver0.4.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/3_50.cbp" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/3_50.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/build.make" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/depend.internal" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/depend.make" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/flags.make" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/3_50.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/input.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/input.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/main.cpp" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Алгоритмы/3.50/output.txt" afterPath="$PROJECT_DIR$/../Алгоритмы/3.50/output.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ОС/Лабораторная 2/Задание 2/output.txt" afterPath="$PROJECT_DIR$/../ОС/Лабораторная 2/Задание 2/output.txt" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#119#120#0" expanded="true" />
@@ -211,8 +218,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -467,11 +474,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477038453555</updated>
       <workItem from="1491136319504" duration="1505000" />
+      <workItem from="1491976854389" duration="54000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1505000" />
+    <option name="totallyTimeSpent" value="1559000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,10 +492,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -495,14 +503,15 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31987077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32471728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -603,26 +612,12 @@
     <entry file="file://$PROJECT_DIR$/src/ComponentTree.java" />
     <entry file="file://$PROJECT_DIR$/src/Add.java" />
     <entry file="file://$PROJECT_DIR$/src/Catalog.java" />
-    <entry file="file://$PROJECT_DIR$/src/DantistDBCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DantistDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DantistDBCreate.java" />
+    <entry file="file://$PROJECT_DIR$/src/DantistDB.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#119#120#0" expanded="true" />
