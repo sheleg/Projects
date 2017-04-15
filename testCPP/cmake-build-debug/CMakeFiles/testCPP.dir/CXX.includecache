@@ -6,12 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/vladasheleg/Documents/Projects/testCPP/main.cpp
+/Users/vladasheleg/Documents/Git/Projects/testCPP/main.cpp
 iostream
 -
 fstream
--
-cmath
 -
 vector
 -
