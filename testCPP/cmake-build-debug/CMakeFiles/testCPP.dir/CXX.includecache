@@ -13,4 +13,10 @@ fstream
 -
 vector
 -
+iostream
+-
+fstream
+-
+cstring
+-
 
