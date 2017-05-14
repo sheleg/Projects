@@ -1,5 +1,0 @@
-D:\Projects\Microsoft\C#\BSU\OS\multithreading_tasks\multithreading_01\bin\Debug\multithreading_01.exe
-D:\Projects\Microsoft\C#\BSU\OS\multithreading_tasks\multithreading_01\bin\Debug\multithreading_01.pdb
-D:\Projects\Microsoft\C#\BSU\OS\multithreading_tasks\multithreading_01\obj\Debug\ResolveAssemblyReference.cache
-D:\Projects\Microsoft\C#\BSU\OS\multithreading_tasks\multithreading_01\obj\Debug\multithreading_01.exe
-D:\Projects\Microsoft\C#\BSU\OS\multithreading_tasks\multithreading_01\obj\Debug\multithreading_01.pdb

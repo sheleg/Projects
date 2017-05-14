@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multithreading_01", "multithreading_01\multithreading_01.csproj", "{0BC3DDD0-1676-4C5A-9CD7-E9E1DCCA0FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multithreading_02", "multithreading_02\multithreading_02.csproj", "{ED5BCD3D-3EF6-47D4-B2C9-CD5D366496E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BC3DDD0-1676-4C5A-9CD7-E9E1DCCA0FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC3DDD0-1676-4C5A-9CD7-E9E1DCCA0FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC3DDD0-1676-4C5A-9CD7-E9E1DCCA0FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC3DDD0-1676-4C5A-9CD7-E9E1DCCA0FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5BCD3D-3EF6-47D4-B2C9-CD5D366496E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5BCD3D-3EF6-47D4-B2C9-CD5D366496E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5BCD3D-3EF6-47D4-B2C9-CD5D366496E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5BCD3D-3EF6-47D4-B2C9-CD5D366496E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

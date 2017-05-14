@@ -11,12 +11,8 @@ iostream
 -
 fstream
 -
+algorithm
+-
 vector
--
-iostream
--
-fstream
--
-cstring
 -
 
