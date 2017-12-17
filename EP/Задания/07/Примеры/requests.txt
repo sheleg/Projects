@@ -1,0 +1,45 @@
+Запросы
+
+select price from service;
+	- выбрать все строки с повторяющимися
+
+select distinct price from service;
+	- выбрать строки без повторяющихся
+
+select distinct price from service order by price;
+	- выбрать строки без повторяющихся отсортировать в прямом порядке
+
+select distinct price from service order by price desc;
+	- выбрать строки без повторяющихся отсортировать в обратном порядке
+
+Задача дантист:
+
+Вопрос 1:
+	SELECT COUNT(DISTINCT FIO) AS NumPatients FROM HealthCare 
+		WHERE Date > '03.11.2016' AND Date < '24.11.2016';
+
+Вопрос 2:
+	SELECT SUM(Price) AS SUMMA FROM HealthCare,Service 
+		WHERE 	HealthCare.Name = Service.Name AND 
+			HealthCare.Date > '03.11.2016' AND 
+			HealthCare.Date < '24.11.2016';
+
+Вопрос 3:
+	SELECT SUM(Price) AS SUMMA FROM HealthCare,Service 
+		WHERE 	HealthCare.Name = Service.Name AND 
+			HealthCare.Date > '03.11.2016' AND 
+			HealthCare.Date < '24.11.2016' AND
+			HealthCare.isPaied = false;
+
+Вопрос 4:
+        SELECT FIO FROM Patients WHERE FIO NOT IN (
+		SELECT DISTINCT FIO FROM HealthCare 
+		WHERE 	Date > '03.11.2016' AND 
+        		Date < '24.11.2016');
+
+Вопрос 5:
+        SELECT Name FROM Service WHERE Name NOT IN (
+		SELECT DISTINCT Name FROM HealthCare 
+		WHERE 	Date > '03.11.2016' AND 
+                  	Date < '24.11.2016');
+	

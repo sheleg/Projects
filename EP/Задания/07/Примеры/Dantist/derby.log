@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Dec 22 08:21:47 GMT+02:00 2016:
+ Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): экземпляр a816c00e-0159-2531-5717-ffffee3fc0c0
+в каталоге базы данных E:\USR\SRC\Dantist\DantistDB sun.misc.Launcher$AppClassLoader@103dbd3 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_20-b26
+user.dir=E:\ecldev\JAVA8\DantistDB\src
+os.name=Windows XP
+os.arch=x86
+os.version=5.1
+derby.system.home=E:\USR\SRC\Dantist
+Запущен загрузчик классов базы данных - derby.database.classpath=''

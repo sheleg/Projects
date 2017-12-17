@@ -1,0 +1,4 @@
+Server connecting
+Worker: Vlada is registred in 1495530217896
+Worker: Marina is registred in 1495530223687
+Worker: Marina is remove in 1495530327073
