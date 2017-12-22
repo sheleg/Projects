@@ -43,6 +43,16 @@ int main() {
         }
     }
 
+    for (int i = 0; i < N + 1; ++i) {
+        cout << lastElementOfSubsequence[i] << " ";
+    }
+    cout << endl;
+
+    for (int i = 0; i < N + 1; ++i) {
+        cout << indexes[i] << " ";
+    }
+    cout << endl;
+
     for (int i = 0; i < N; i++) {
         lastElementsOfReversedSubsequence[i] = -1;
     }
@@ -61,6 +71,16 @@ int main() {
         else
             indexesReversed[i] = m;
     }
+
+    for (int i = 0; i < N + 1; ++i) {
+        cout << lastElementsOfReversedSubsequence[i] << " ";
+    }
+    cout << endl;
+
+    for (int i = 0; i < N + 1; ++i) {
+        cout << indexesReversed[i] << " ";
+    }
+    cout << endl;
 
     int max = 1;
     for (int i = 0; i < N; i++) {

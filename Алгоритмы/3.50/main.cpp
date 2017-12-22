@@ -20,6 +20,8 @@ int maximumOfSegment(int, int, int, int, int);
 void updateValueForSegment(int, int, int, int, int);
 
 
+void addValue(int, int, int, int, int) ;
+
 vector<int> treeOfSegmentSum;
 vector<int> treeOfSegmentMax;
 vector<int> treeOfSegmentMin;
@@ -58,6 +60,21 @@ int main() {
                 fin >> value;
                 updateValue(1, 0, N - 1, index, value);
                 arrayOfTree[index] = value;
+                for (int i = 0; i < treeOfSegmentSum.size(); ++i) {
+                    cout << treeOfSegmentSum[i] << "  ";
+                }
+                cout << endl;
+
+                for (int i = 0; i < treeOfSegmentMin.size(); ++i) {
+                    cout << treeOfSegmentMin[i] << "  ";
+                }
+                cout << endl;
+
+                for (int i = 0; i < treeOfSegmentMax.size(); ++i) {
+                    cout << treeOfSegmentMax[i] << "  ";
+                }
+                cout << endl;
+
             }
                 break;
             case 2: {
@@ -68,7 +85,10 @@ int main() {
                 for (int i = startIndex; i <= endIndex; ++i) {
                     arrayOfTree[i] += value;
                 }
-                addToSegment();
+                //addToSegment();
+                for (int i = startIndex; i <= endIndex; ++i) {
+                    addValue(1, 0, N -1, i, value);
+                }
             }
                 break;
             case 3: {
@@ -83,6 +103,7 @@ int main() {
                 fin >> startIndex;
                 fin >> endIndex;
                 fout << minimumOfSegment(1, 0, N - 1, startIndex, endIndex) << endl;
+
             }
                 break;
             case 5: {
@@ -100,6 +121,30 @@ int main() {
         }
     }
     return 0;
+}
+
+void addValue(int numberOfVertex, int currentStartIndex,
+                 int currentEndIndex, int positionToUpdate, int valueToUpdate) {
+
+    if (currentStartIndex == currentEndIndex) {
+        treeOfSegmentSum[numberOfVertex] += valueToUpdate;
+        treeOfSegmentMax[numberOfVertex] += valueToUpdate;
+        treeOfSegmentMin[numberOfVertex] += valueToUpdate;
+    } else {
+        int tempSegment = (currentStartIndex + currentEndIndex) / 2;
+
+        if (positionToUpdate <= tempSegment)
+            addValue(numberOfVertex * 2, currentStartIndex, tempSegment, positionToUpdate, valueToUpdate);
+        else
+            addValue(numberOfVertex * 2 + 1, tempSegment + 1, currentEndIndex, positionToUpdate, valueToUpdate);
+
+        treeOfSegmentSum[numberOfVertex] =
+                treeOfSegmentSum[numberOfVertex * 2] + treeOfSegmentSum[numberOfVertex * 2 + 1];
+        treeOfSegmentMax[numberOfVertex] = max(treeOfSegmentMax[numberOfVertex * 2],
+                                               treeOfSegmentMax[numberOfVertex * 2 + 1]);
+        treeOfSegmentMin[numberOfVertex] = min(treeOfSegmentMin[numberOfVertex * 2],
+                                               treeOfSegmentMin[numberOfVertex * 2 + 1]);
+    }
 }
 
 void treeBuild(int numberOfVertex, int currentStartIndex, int currentEndIndex) {

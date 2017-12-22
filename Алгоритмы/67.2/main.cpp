@@ -4,7 +4,6 @@
 #include <queue>
 
 using namespace std;
-
 int ID = 1;
 vector<vector<int>> matrix;
 vector<bool> used;

@@ -1,5 +1,0 @@
-/Users/vladasheleg/Documents/Git/Projects/testC#/testCS/testCS/bin/Debug/testCS.exe
-/Users/vladasheleg/Documents/Git/Projects/testC#/testCS/testCS/bin/Debug/testCS.exe.mdb
-/Users/vladasheleg/Documents/Git/Projects/testC#/testCS/testCS/obj/Debug/testCS.csprojResolveAssemblyReference.cache
-/Users/vladasheleg/Documents/Git/Projects/testC#/testCS/testCS/obj/Debug/testCS.exe
-/Users/vladasheleg/Documents/Git/Projects/testC#/testCS/testCS/obj/Debug/testCS.exe.mdb
