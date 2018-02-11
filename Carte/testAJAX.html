@@ -1,0 +1,205 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div>
+    <table style="empty-cells:hide;">
+        <tr>
+            <td class="center cl-td">
+                Выберите регион:<br>
+                <select id="regions" onclick="insertValues()">
+                    <option id="1" name="region" value="Minsk"> Минский район
+                    <option id="2" name="region" value="Brest"> Брестский район
+                    <option id="3" name="region" value="Vitebsk"> Витебский район
+                    <option id="4" name="region" value="Gomel"> Гомельский район
+                    <option id="5" name="region" value="Mogilev"> Могилевский район
+                    <option id="6" name="region" value="Grodno"> Гродненский район
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="center cl-td">
+                Выберите город:<br>
+                <select id="cities" onclick="getRestaurants()"></select>
+            </td>
+        </tr>
+        <tr>
+            <td class="card-td">
+                <div class="container" id="restaurants">
+                    <!--<div class="col-md-10">-->
+                        <!--<div class="card" align="center">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-4">-->
+                                    <!--<img src="http://iphex-india.com/assets/images/nologo.png">-->
+                                <!--</div>-->
+                                <!--<div class="col-md-8">-->
+                                    <!--<div class="card-block px-5">-->
+                                        <!--<h5 class="card-title center"><a href="https://carte.by">Carte</a></h5>-->
+                                        <!--<h6 class="card-title">Адрес</h6>-->
+                                        <!--<span class="badge badge-success right">Доставка</span>-->
+                                        <!--<span class="badge badge-info right">Бронь</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <div id="data"></div>
+</div>
+
+</body>
+
+
+<script>
+    function insertValues() {
+        var regions = document.getElementById("regions");
+        var select = document.getElementById("cities");
+        var id = regions.options[regions.selectedIndex].id;
+
+        var request = new XMLHttpRequest();
+        request.open('Get', 'http://localhost:3000/regions/' + id + "/cities");
+
+        request.send();
+
+
+        request.onreadystatechange = function () {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                    var cities = JSON.parse(request.responseText);
+                    select.innerHTML = null;
+                    cities.forEach(function (city) {
+                        var txtVal = city.name,
+                            newOption = document.createElement("OPTION"),
+                            newOptionVal = document.createTextNode(txtVal);
+                        if (city.active == false) {
+                            newOption.disabled = true;
+                        }
+                        newOption.appendChild(newOptionVal);
+                        newOption.setAttribute("id", String(city.id));
+                        select.insertBefore(newOption, select.lastChild);
+                    });
+
+                } else {
+                    data.innerHTML = 'Произошла ошибка при запросе: ' + request.status + ' ' + request.statusText;
+                }
+            }
+        }
+    }
+
+    function getRestaurants() {
+        var cities = document.getElementById("cities");
+        var regions = document.getElementById("regions");
+        var rests = document.getElementById("restaurants");
+        rests.innerHTML = null;
+        var region_id = regions.options[regions.selectedIndex].id;
+        var city_id = cities.options[cities.selectedIndex].id;
+
+        var request = new XMLHttpRequest();
+        request.open('Get', 'http://localhost:3000/regions/' + region_id + "/cities/" + city_id + "/restaurants");
+
+        request.send();
+
+        request.onreadystatechange = function () {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                    var restaurants = JSON.parse(request.responseText);
+                    restaurants.forEach(function (restaurant) {
+                        var sizeCol = document.createElement("div");
+                        sizeCol.className = "col-md-10";
+
+                        var newCard = document.createElement("div");
+                        newCard.className = "card";
+
+                        var newRow = document.createElement("div");
+                        newRow.className = "row";
+
+                        var newCol1 = document.createElement("div");
+                        newCol1.className = "col-md-4";
+
+                        var img = new Image;
+                        img.src = "http://iphex-india.com/assets/images/nologo.png";
+                        if (restaurant.logo)
+                            img.src = restaurant.logo;
+                        img.setAttribute("height", "150");
+                        img.setAttribute("width", "200");
+
+                        newCol1.appendChild(img);
+
+                        var newCol2 = document.createElement("div");
+                        newCol2.className = "col-md-8";
+
+                        var newCardBlock = document.createElement("div");
+                        newCardBlock.className = "card-block px-5";
+
+                        var h5 = document.createElement("h5");
+                        h5.className = "card-title center";
+
+                        var link = document.createElement("a");
+                        link.setAttribute("href", 'http://localhost:3000/regions/' + region_id + "/cities/"
+                            + city_id + "/restaurants/" + restaurant.id);
+                        var textLink = document.createTextNode(restaurant.name);
+                        link.appendChild(textLink);
+
+                        h5.appendChild(link);
+
+                        var h6 = document.createElement("h6");
+                        h6.className = "card-title";
+                        var texth6 = document.createTextNode(restaurant.address);
+                        h6.setAttribute("align", "right");
+                        h6.appendChild(texth6);
+
+
+                        newCol2.appendChild(h5);
+                        newCol2.appendChild(h6);
+
+                        var labelh6 = document.createElement("h6");
+                        labelh6.setAttribute("align", "right");
+
+                        if (restaurant.orderable == true) {
+                            var spanD = document.createElement("span");
+                            spanD.className = "badge badge-success";
+                            var textD = document.createTextNode("Доставка");
+                            spanD.appendChild(textD)
+                            // newCol2.appendChild(spanD);
+                            labelh6.appendChild(spanD)
+                            // h5.appendChild(spanD);
+                        }
+
+                        if (restaurant.bookable == true) {
+                            var spanB = document.createElement("span");
+                            spanB.className = "badge badge-info";
+                            var textB = document.createTextNode("Бронь");
+                            spanB.appendChild(textB);
+                            // newCol2.appendChild(spanB);
+                            labelh6.appendChild(spanB)
+
+                            // h5.appendChild(spanB);
+                        }
+
+                        newCol2.appendChild(labelh6);
+
+                        newRow.appendChild(newCol1);
+                        newRow.appendChild(newCol2);
+                        newCard.appendChild(newRow);
+                        sizeCol.appendChild(newCard)
+                        rests.insertBefore(sizeCol, rests.lastChild);
+                    });
+
+                } else {
+                    data.innerHTML = 'Произошла ошибка при запросе: ' + request.status + ' ' + request.statusText;
+                }
+            }
+        }
+    }
+</script>

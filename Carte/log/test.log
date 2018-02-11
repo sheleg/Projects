@@ -1,0 +1,122 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "categories"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "restaurant_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_categories_on_restaurant_id" ON "categories" ("restaurant_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cities"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "active" boolean, "region_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_cities_on_region_id" ON "cities" ("region_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "dishes"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "weight" varchar, "price" varchar, "composition" varchar, "category_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image" varchar)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_dishes_on_category_id" ON "dishes" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "regions"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "regions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "restaurants"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "worktime" varchar, "phone" varchar, "average" varchar, "bookable" boolean, "orderable" boolean, "city_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images" varchar, "logo" varchar, "lng" varchar, "lat" varchar)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_restaurants_on_city_id" ON "restaurants" ("city_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171217153216)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171117180458),
+(20171117180905),
+(20171117182351),
+(20171117182521),
+(20171117182727),
+(20171201141229),
+(20171202190236),
+(20171202190434),
+(20171206223137);
+
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-02-11 19:14:40.761432"], ["updated_at", "2018-02-11 19:14:40.761432"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.6ms)[0m  [1m[31mDELETE FROM "categories"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at", "id", "restaurant_id") VALUES ('MyString', '2018-02-11 19:14:40.861092', '2018-02-11 19:14:40.861092', 980190962, 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at", "id", "restaurant_id") VALUES ('MyString', '2018-02-11 19:14:40.861092', '2018-02-11 19:14:40.861092', 298486374, 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cities"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "active", "created_at", "updated_at", "id", "region_id") VALUES ('MyString', 'f', '2018-02-11 19:14:40.864873', '2018-02-11 19:14:40.864873', 980190962, 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "active", "created_at", "updated_at", "id", "region_id") VALUES ('MyString', 'f', '2018-02-11 19:14:40.864873', '2018-02-11 19:14:40.864873', 298486374, 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "dishes"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "weight", "price", "composition", "created_at", "updated_at", "id", "category_id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2018-02-11 19:14:40.866824', '2018-02-11 19:14:40.866824', 980190962, 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "weight", "price", "composition", "created_at", "updated_at", "id", "category_id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2018-02-11 19:14:40.866824', '2018-02-11 19:14:40.866824', 298486374, 298486374)[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "regions"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "regions" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2018-02-11 19:14:40.868782', '2018-02-11 19:14:40.868782', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "regions" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2018-02-11 19:14:40.868782', '2018-02-11 19:14:40.868782', 298486374)[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "restaurants"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "worktime", "phone", "average", "bookable", "orderable", "created_at", "updated_at", "id", "city_id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'f', 'f', '2018-02-11 19:14:40.871167', '2018-02-11 19:14:40.871167', 980190962, 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "worktime", "phone", "average", "bookable", "orderable", "created_at", "updated_at", "id", "city_id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'f', 'f', '2018-02-11 19:14:40.871167', '2018-02-11 19:14:40.871167', 298486374, 298486374)[0m
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+RegionsControllerTest: test_should_get_index
+--------------------------------------------
+Started GET "/regions/index" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------
+CategoriesControllerTest: test_should_get_index
+-----------------------------------------------
+Started GET "/categories/index" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."restaurant_id" IS NULL[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+CategoriesControllerTest: test_should_get_show
+----------------------------------------------
+Started GET "/categories/show" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by CategoriesController#show as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+CitiesControllerTest: test_should_get_index
+-------------------------------------------
+Started GET "/cities/index" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."region_id" IS NULL[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+CitiesControllerTest: test_should_get_show
+------------------------------------------
+Started GET "/cities/show" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by CitiesController#show as HTML
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+DishesControllerTest: test_should_get_index
+-------------------------------------------
+Started GET "/dishes/index" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."category_id" IS NULL[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+DishesControllerTest: test_should_get_show
+------------------------------------------
+Started GET "/dishes/show" for 127.0.0.1 at 2018-02-11 22:14:41 +0300
+Processing by DishesController#show as HTML
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
