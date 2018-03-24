@@ -1,1 +1,0 @@
-@java Printf4Test
