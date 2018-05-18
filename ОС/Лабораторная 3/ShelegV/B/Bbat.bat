@@ -1,6 +1,6 @@
 @echo off
 chcp 1251>nul
-set B_COMP_PATH=\\10.150.6.2\Common_stud\ShelegV\B
+set B_COMP_PATH=C:\B
 set path1=%B_COMP_PATH%\old
 set path2=%B_COMP_PATH%\new
 set path3=%B_COMP_PATH%\newest

@@ -2,7 +2,6 @@ require 'httparty'
 require 'nokogiri'
 require 'open-uri'
 
-# doc = Nokogiri::HTML(open("https://carte.by/minsk/")).to_s
 page = HTTParty.get("https://newyork.craigslist.org/search/pet?s=0")
 doc = Nokogiri::HTML(page)
 

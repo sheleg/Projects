@@ -1,0 +1,33 @@
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/bin/Debug/netcoreapp2.0/Lab3.deps.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/bin/Debug/netcoreapp2.0/Lab3.runtimeconfig.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/bin/Debug/netcoreapp2.0/Lab3.runtimeconfig.dev.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/bin/Debug/netcoreapp2.0/Lab3.dll
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/bin/Debug/netcoreapp2.0/Lab3.pdb
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/obj/Debug/netcoreapp2.0/Lab3.csproj.CoreCompileInputs.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/obj/Debug/netcoreapp2.0/Lab3.AssemblyInfoInputs.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/obj/Debug/netcoreapp2.0/Lab3.AssemblyInfo.cs
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/obj/Debug/netcoreapp2.0/Lab3.dll
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/obj/Debug/netcoreapp2.0/Lab3.pdb
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3/Lab3/obj/Debug/netcoreapp2.0/Lab3.csprojResolveAssemblyReference.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.deps.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.runtimeconfig.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.runtimeconfig.dev.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.dll
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.pdb
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.csprojResolveAssemblyReference.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.csproj.CoreCompileInputs.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.AssemblyInfoInputs.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.AssemblyInfo.cs
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.dll
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab3 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.pdb
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.deps.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.runtimeconfig.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.runtimeconfig.dev.json
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.dll
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/bin/Debug/netcoreapp2.0/Lab3.pdb
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.csprojResolveAssemblyReference.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.csproj.CoreCompileInputs.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.AssemblyInfoInputs.cache
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.AssemblyInfo.cs
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.dll
+/Users/vladasheleg/Documents/Projects/Войтешенко/Lab5 oauth/Lab3/obj/Debug/netcoreapp2.0/Lab3.pdb

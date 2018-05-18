@@ -1,0 +1,14 @@
+﻿@model Lab3.Models.IndexModel
+
+@{
+    ViewData["Title"] = "Sign in";
+}
+
+@if (!User.Identity.IsAuthenticated)
+{
+<div class="row" style="margin-top: 20px;">
+    <div class="col-md-12">
+        <a asp-controller="Account" asp-action="SignIn" class="btn btn-default">Sign in with GitHub</a>
+    </div>
+</div>
+}

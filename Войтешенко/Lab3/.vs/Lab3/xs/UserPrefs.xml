@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{398F3F59-8FDC-4388-B176-271818B887E0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3/Controllers/RostersController.cs">
+    <Files>
+      <File FileName="Lab3/Models/Rosters.cs" Line="17" Column="1" />
+      <File FileName="Lab3/Models/crittersContext.cs" Line="11" Column="62" />
+      <File FileName="Lab3/appsettings.json" Line="2" Column="1" />
+      <File FileName="Lab3/Startup.cs" Line="49" Column="49" />
+      <File FileName="Lab3/Program.cs" Line="21" Column="1" />
+      <File FileName="Lab3/Controllers/RostersController.cs" Line="73" Column="59" />
+      <File FileName="Lab3/Views/Rosters/Index.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Models/ErrorViewModel.cs" Line="9" Column="70" />
+      <File FileName="Lab3/Views/Rosters/Details.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Views/Home/About.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Shared/_Layout.cshtml" Line="21" Column="32" />
+      <File FileName="Lab3/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Rosters/Create.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Views/Rosters/Delete.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Views/Home/Contact.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/_ViewStart.cshtml" Line="2" Column="14" />
+      <File FileName="Lab3/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Rosters/Edit.cshtml" Line="4" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Lab3 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

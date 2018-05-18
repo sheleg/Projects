@@ -1,0 +1,56 @@
+﻿<Properties StartupConfiguration="{398F3F59-8FDC-4388-B176-271818B887E0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3/Startup.cs">
+    <Files>
+      <File FileName="Lab3/Startup.cs" Line="58" Column="43" />
+      <File FileName="Lab3/Program.cs" Line="21" Column="1" />
+      <File FileName="Lab3/Controllers/RostersController.cs" Line="14" Column="1" />
+      <File FileName="Lab3/Views/Rosters/Index.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Models/ErrorViewModel.cs" Line="9" Column="70" />
+      <File FileName="Lab3/Views/Rosters/Details.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Views/Home/About.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Shared/_Layout.cshtml" Line="21" Column="32" />
+      <File FileName="Lab3/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Rosters/Create.cshtml" Line="1" Column="20" />
+      <File FileName="Lab3/Views/Rosters/Delete.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Views/Home/Contact.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Home/Index.cshtml" Line="7" Column="7" />
+      <File FileName="Lab3/Views/_ViewStart.cshtml" Line="2" Column="14" />
+      <File FileName="Lab3/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Rosters/Edit.cshtml" Line="4" Column="23" />
+      <File FileName="Lab3/Controllers/AccountController.cs" Line="16" Column="65" />
+      <File FileName="Lab3/Models/IndexModel.cs" Line="18" Column="1" />
+      <File FileName="Lab3/Views/Index.cshtml" Line="14" Column="10" />
+      <File FileName="Lab3/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Lab3/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="Lab3/appsettings.json" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lab3" expanded="True">
+            <Node name="Lab3" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Rosters" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>$exception</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Lab3 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

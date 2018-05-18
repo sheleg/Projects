@@ -1,0 +1,240 @@
+I, [2018-04-18T16:42:58.776673 #16766]  INFO -- : [a9c5a582-c3a4-4dec-af65-45314d847955] Started GET "/regions" for 127.0.0.1 at 2018-04-18 16:42:58 +0300
+I, [2018-04-18T16:42:58.783121 #16766]  INFO -- : [a9c5a582-c3a4-4dec-af65-45314d847955] Processing by RegionsController#index as HTML
+D, [2018-04-18T16:42:58.793279 #16766] DEBUG -- : [a9c5a582-c3a4-4dec-af65-45314d847955]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T16:42:58.793523 #16766]  INFO -- : [a9c5a582-c3a4-4dec-af65-45314d847955] Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.6ms)
+F, [2018-04-18T16:42:58.794181 #16766] FATAL -- : [a9c5a582-c3a4-4dec-af65-45314d847955]   
+F, [2018-04-18T16:42:58.794234 #16766] FATAL -- : [a9c5a582-c3a4-4dec-af65-45314d847955] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T16:42:58.794264 #16766] FATAL -- : [a9c5a582-c3a4-4dec-af65-45314d847955]   
+F, [2018-04-18T16:42:58.794295 #16766] FATAL -- : [a9c5a582-c3a4-4dec-af65-45314d847955] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:34:06.171804 #17634]  INFO -- : [03777adb-b27c-49ee-9e23-927c083be517] Started GET "/" for 127.0.0.1 at 2018-04-18 21:34:06 +0300
+F, [2018-04-18T21:34:06.177408 #17634] FATAL -- : [03777adb-b27c-49ee-9e23-927c083be517]   
+F, [2018-04-18T21:34:06.177480 #17634] FATAL -- : [03777adb-b27c-49ee-9e23-927c083be517] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-18T21:34:06.177515 #17634] FATAL -- : [03777adb-b27c-49ee-9e23-927c083be517]   
+F, [2018-04-18T21:34:06.177552 #17634] FATAL -- : [03777adb-b27c-49ee-9e23-927c083be517] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[03777adb-b27c-49ee-9e23-927c083be517] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[03777adb-b27c-49ee-9e23-927c083be517] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[03777adb-b27c-49ee-9e23-927c083be517] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[03777adb-b27c-49ee-9e23-927c083be517] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[03777adb-b27c-49ee-9e23-927c083be517] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+[03777adb-b27c-49ee-9e23-927c083be517] puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+[03777adb-b27c-49ee-9e23-927c083be517] puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+[03777adb-b27c-49ee-9e23-927c083be517] puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+[03777adb-b27c-49ee-9e23-927c083be517] puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-18T21:35:17.092162 #17634]  INFO -- : [a1699567-7017-47a3-9464-f30eb8149e82] Started GET "/" for 127.0.0.1 at 2018-04-18 21:35:17 +0300
+F, [2018-04-18T21:35:17.092643 #17634] FATAL -- : [a1699567-7017-47a3-9464-f30eb8149e82]   
+F, [2018-04-18T21:35:17.092688 #17634] FATAL -- : [a1699567-7017-47a3-9464-f30eb8149e82] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-18T21:35:17.092744 #17634] FATAL -- : [a1699567-7017-47a3-9464-f30eb8149e82]   
+F, [2018-04-18T21:35:17.092779 #17634] FATAL -- : [a1699567-7017-47a3-9464-f30eb8149e82] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[a1699567-7017-47a3-9464-f30eb8149e82] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[a1699567-7017-47a3-9464-f30eb8149e82] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a1699567-7017-47a3-9464-f30eb8149e82] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[a1699567-7017-47a3-9464-f30eb8149e82] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[a1699567-7017-47a3-9464-f30eb8149e82] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+[a1699567-7017-47a3-9464-f30eb8149e82] puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+[a1699567-7017-47a3-9464-f30eb8149e82] puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+[a1699567-7017-47a3-9464-f30eb8149e82] puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+[a1699567-7017-47a3-9464-f30eb8149e82] puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-18T21:35:18.100565 #17634]  INFO -- : [8286d5dc-d19d-4728-9770-11f56d9252c7] Started GET "/regions" for 127.0.0.1 at 2018-04-18 21:35:18 +0300
+I, [2018-04-18T21:35:18.102272 #17634]  INFO -- : [8286d5dc-d19d-4728-9770-11f56d9252c7] Processing by RegionsController#index as HTML
+D, [2018-04-18T21:35:18.107885 #17634] DEBUG -- : [8286d5dc-d19d-4728-9770-11f56d9252c7]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T21:35:18.108290 #17634]  INFO -- : [8286d5dc-d19d-4728-9770-11f56d9252c7] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms)
+F, [2018-04-18T21:35:18.108925 #17634] FATAL -- : [8286d5dc-d19d-4728-9770-11f56d9252c7]   
+F, [2018-04-18T21:35:18.108969 #17634] FATAL -- : [8286d5dc-d19d-4728-9770-11f56d9252c7] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T21:35:18.109006 #17634] FATAL -- : [8286d5dc-d19d-4728-9770-11f56d9252c7]   
+F, [2018-04-18T21:35:18.109041 #17634] FATAL -- : [8286d5dc-d19d-4728-9770-11f56d9252c7] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:35:18.382200 #17634]  INFO -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56] Started GET "/regions" for 127.0.0.1 at 2018-04-18 21:35:18 +0300
+I, [2018-04-18T21:35:18.382703 #17634]  INFO -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56] Processing by RegionsController#index as HTML
+D, [2018-04-18T21:35:18.383408 #17634] DEBUG -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T21:35:18.383550 #17634]  INFO -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+F, [2018-04-18T21:35:18.384196 #17634] FATAL -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56]   
+F, [2018-04-18T21:35:18.384261 #17634] FATAL -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T21:35:18.384290 #17634] FATAL -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56]   
+F, [2018-04-18T21:35:18.384321 #17634] FATAL -- : [c06cc821-1fc9-4fe9-b756-77abd7591f56] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:36:06.821852 #17634]  INFO -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d] Started GET "/regions" for 127.0.0.1 at 2018-04-18 21:36:06 +0300
+I, [2018-04-18T21:36:06.822380 #17634]  INFO -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d] Processing by RegionsController#index as HTML
+D, [2018-04-18T21:36:06.823039 #17634] DEBUG -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T21:36:06.823202 #17634]  INFO -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+F, [2018-04-18T21:36:06.823818 #17634] FATAL -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d]   
+F, [2018-04-18T21:36:06.823859 #17634] FATAL -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T21:36:06.823890 #17634] FATAL -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d]   
+F, [2018-04-18T21:36:06.823927 #17634] FATAL -- : [f0721f68-bebc-4e6a-8f41-dca140ef5a6d] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:36:07.749135 #17634]  INFO -- : [47f44edc-d2e1-456c-a3bb-8737424b8486] Started GET "/" for 127.0.0.1 at 2018-04-18 21:36:07 +0300
+F, [2018-04-18T21:36:07.749595 #17634] FATAL -- : [47f44edc-d2e1-456c-a3bb-8737424b8486]   
+F, [2018-04-18T21:36:07.749639 #17634] FATAL -- : [47f44edc-d2e1-456c-a3bb-8737424b8486] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-18T21:36:07.749672 #17634] FATAL -- : [47f44edc-d2e1-456c-a3bb-8737424b8486]   
+F, [2018-04-18T21:36:07.749707 #17634] FATAL -- : [47f44edc-d2e1-456c-a3bb-8737424b8486] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+[47f44edc-d2e1-456c-a3bb-8737424b8486] puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-18T21:36:14.144406 #17634]  INFO -- : [ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] Started GET "/" for 127.0.0.1 at 2018-04-18 21:36:14 +0300
+F, [2018-04-18T21:36:14.144860 #17634] FATAL -- : [ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2]   
+F, [2018-04-18T21:36:14.144916 #17634] FATAL -- : [ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-18T21:36:14.144949 #17634] FATAL -- : [ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2]   
+F, [2018-04-18T21:36:14.144985 #17634] FATAL -- : [ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+[ec3b2bcd-855e-47e9-a9b1-aa7849b9bdc2] puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-18T21:36:19.608020 #17634]  INFO -- : [c6971677-5b9e-46a3-abfb-b32773144405] Started GET "/" for 127.0.0.1 at 2018-04-18 21:36:19 +0300
+F, [2018-04-18T21:36:19.608501 #17634] FATAL -- : [c6971677-5b9e-46a3-abfb-b32773144405]   
+F, [2018-04-18T21:36:19.608572 #17634] FATAL -- : [c6971677-5b9e-46a3-abfb-b32773144405] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-18T21:36:19.608612 #17634] FATAL -- : [c6971677-5b9e-46a3-abfb-b32773144405]   
+F, [2018-04-18T21:36:19.608653 #17634] FATAL -- : [c6971677-5b9e-46a3-abfb-b32773144405] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[c6971677-5b9e-46a3-abfb-b32773144405] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[c6971677-5b9e-46a3-abfb-b32773144405] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[c6971677-5b9e-46a3-abfb-b32773144405] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[c6971677-5b9e-46a3-abfb-b32773144405] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[c6971677-5b9e-46a3-abfb-b32773144405] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+[c6971677-5b9e-46a3-abfb-b32773144405] puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+[c6971677-5b9e-46a3-abfb-b32773144405] puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+[c6971677-5b9e-46a3-abfb-b32773144405] puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+[c6971677-5b9e-46a3-abfb-b32773144405] puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-18T21:36:20.909182 #17634]  INFO -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab] Started GET "/regions" for 127.0.0.1 at 2018-04-18 21:36:20 +0300
+I, [2018-04-18T21:36:20.909647 #17634]  INFO -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab] Processing by RegionsController#index as HTML
+D, [2018-04-18T21:36:20.910279 #17634] DEBUG -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T21:36:20.910421 #17634]  INFO -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+F, [2018-04-18T21:36:20.910967 #17634] FATAL -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab]   
+F, [2018-04-18T21:36:20.911005 #17634] FATAL -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T21:36:20.911035 #17634] FATAL -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab]   
+F, [2018-04-18T21:36:20.911108 #17634] FATAL -- : [59cfbc3c-b001-4462-89a8-bd715e8024ab] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:36:23.512361 #17634]  INFO -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7] Started GET "/regions" for 127.0.0.1 at 2018-04-18 21:36:23 +0300
+I, [2018-04-18T21:36:23.512827 #17634]  INFO -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7] Processing by RegionsController#index as HTML
+D, [2018-04-18T21:36:23.513441 #17634] DEBUG -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T21:36:23.513576 #17634]  INFO -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+F, [2018-04-18T21:36:23.514123 #17634] FATAL -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7]   
+F, [2018-04-18T21:36:23.514160 #17634] FATAL -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T21:36:23.514193 #17634] FATAL -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7]   
+F, [2018-04-18T21:36:23.514223 #17634] FATAL -- : [181d56b1-6ec8-4a0f-8f26-56f6501ce4a7] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:36:25.272911 #17634]  INFO -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556] Started GET "/regions/" for 127.0.0.1 at 2018-04-18 21:36:25 +0300
+I, [2018-04-18T21:36:25.273416 #17634]  INFO -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556] Processing by RegionsController#index as HTML
+D, [2018-04-18T21:36:25.274036 #17634] DEBUG -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556]   [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T21:36:25.274208 #17634]  INFO -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+F, [2018-04-18T21:36:25.274899 #17634] FATAL -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556]   
+F, [2018-04-18T21:36:25.274967 #17634] FATAL -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T21:36:25.275000 #17634] FATAL -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556]   
+F, [2018-04-18T21:36:25.275031 #17634] FATAL -- : [10948bb1-5993-43e7-9f5d-2de82ca3e556] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T21:36:28.898325 #17634]  INFO -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f] Started GET "/regions/1" for 127.0.0.1 at 2018-04-18 21:36:28 +0300
+I, [2018-04-18T21:36:28.898909 #17634]  INFO -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f] Processing by RegionsController#show as HTML
+I, [2018-04-18T21:36:28.898962 #17634]  INFO -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f]   Parameters: {"id"=>"1"}
+I, [2018-04-18T21:36:28.900060 #17634]  INFO -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+F, [2018-04-18T21:36:28.900790 #17634] FATAL -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f]   
+F, [2018-04-18T21:36:28.900892 #17634] FATAL -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f] ActiveRecord::StatementInvalid (Could not find table 'regions'):
+F, [2018-04-18T21:36:28.900946 #17634] FATAL -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f]   
+F, [2018-04-18T21:36:28.900984 #17634] FATAL -- : [ac87e551-335b-4c18-b705-a807cfcdbb8f] app/controllers/regions_controller.rb:8:in `show'
+I, [2018-04-18T21:36:28.967566 #17634]  INFO -- : [44f63aab-413f-4039-94a8-68d6246134ba] Started GET "/regions/1" for 127.0.0.1 at 2018-04-18 21:36:28 +0300
+I, [2018-04-18T21:36:28.968733 #17634]  INFO -- : [44f63aab-413f-4039-94a8-68d6246134ba] Processing by RegionsController#show as HTML
+I, [2018-04-18T21:36:28.969130 #17634]  INFO -- : [44f63aab-413f-4039-94a8-68d6246134ba]   Parameters: {"id"=>"1"}
+I, [2018-04-18T21:36:28.970143 #17634]  INFO -- : [44f63aab-413f-4039-94a8-68d6246134ba] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+F, [2018-04-18T21:36:28.970667 #17634] FATAL -- : [44f63aab-413f-4039-94a8-68d6246134ba]   
+F, [2018-04-18T21:36:28.970722 #17634] FATAL -- : [44f63aab-413f-4039-94a8-68d6246134ba] ActiveRecord::StatementInvalid (Could not find table 'regions'):
+F, [2018-04-18T21:36:28.970751 #17634] FATAL -- : [44f63aab-413f-4039-94a8-68d6246134ba]   
+F, [2018-04-18T21:36:28.970782 #17634] FATAL -- : [44f63aab-413f-4039-94a8-68d6246134ba] app/controllers/regions_controller.rb:8:in `show'
+I, [2018-04-18T22:34:08.608180 #18303]  INFO -- : [9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] Started GET "/" for 127.0.0.1 at 2018-04-18 22:34:08 +0300
+F, [2018-04-18T22:34:08.624321 #18303] FATAL -- : [9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe]   
+F, [2018-04-18T22:34:08.624414 #18303] FATAL -- : [9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-18T22:34:08.624457 #18303] FATAL -- : [9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe]   
+F, [2018-04-18T22:34:08.624497 #18303] FATAL -- : [9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+[9ea7ac4c-fa78-4e70-afb1-c120ffab8cbe] puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-18T22:34:10.876444 #18303]  INFO -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559] Started GET "/regions" for 127.0.0.1 at 2018-04-18 22:34:10 +0300
+I, [2018-04-18T22:34:10.887957 #18303]  INFO -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559] Processing by RegionsController#index as HTML
+D, [2018-04-18T22:34:10.910004 #18303] DEBUG -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559]   [1m[36mRegion Load (1.5ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T22:34:10.911085 #18303]  INFO -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559] Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.5ms)
+F, [2018-04-18T22:34:10.911854 #18303] FATAL -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559]   
+F, [2018-04-18T22:34:10.911910 #18303] FATAL -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T22:34:10.911959 #18303] FATAL -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559]   
+F, [2018-04-18T22:34:10.911992 #18303] FATAL -- : [e8edaa96-627b-4c6a-b26d-25b6f170e559] app/controllers/regions_controller.rb:5:in `index'
+I, [2018-04-18T22:47:15.230100 #18494]  INFO -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50] Started GET "/regions" for 127.0.0.1 at 2018-04-18 22:47:15 +0300
+I, [2018-04-18T22:47:15.254569 #18494]  INFO -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50] Processing by RegionsController#index as HTML
+D, [2018-04-18T22:47:15.271987 #18494] DEBUG -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50]   [1m[36mRegion Load (1.1ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T22:47:15.272890 #18494]  INFO -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50] Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.7ms)
+F, [2018-04-18T22:47:15.274854 #18494] FATAL -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50]   
+F, [2018-04-18T22:47:15.275073 #18494] FATAL -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T22:47:15.275222 #18494] FATAL -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50]   
+F, [2018-04-18T22:47:15.275367 #18494] FATAL -- : [0e7df0c8-fd5c-4990-8ced-658adfe83f50] app/controllers/regions_controller.rb:4:in `index'
+I, [2018-04-18T22:47:18.316475 #18494]  INFO -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc] Started GET "/regions" for 127.0.0.1 at 2018-04-18 22:47:18 +0300
+I, [2018-04-18T22:47:18.318185 #18494]  INFO -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc] Processing by RegionsController#index as HTML
+D, [2018-04-18T22:47:18.320169 #18494] DEBUG -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc]   [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+I, [2018-04-18T22:47:18.321394 #18494]  INFO -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+F, [2018-04-18T22:47:18.324153 #18494] FATAL -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc]   
+F, [2018-04-18T22:47:18.324377 #18494] FATAL -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: regions: SELECT "regions".* FROM "regions"):
+F, [2018-04-18T22:47:18.324465 #18494] FATAL -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc]   
+F, [2018-04-18T22:47:18.324538 #18494] FATAL -- : [b08d7aff-8035-4d28-b0f6-ab74f29902cc] app/controllers/regions_controller.rb:4:in `index'

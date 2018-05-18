@@ -1,0 +1,81 @@
+@model Lab3.Models.Rosters
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>Rosters</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Playerid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Playerid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthcity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Birthcity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthstate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Birthstate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Jersey">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>
