@@ -1,0 +1,7 @@
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\bin\Lab4.dll.config
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\bin\Lab4.dll
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\bin\Lab4.pdb
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\obj\Debug\Lab4.dll
+Y:\Documents\Projects\Войтешенко\Lab4\Lab4\Lab4\obj\Debug\Lab4.pdb

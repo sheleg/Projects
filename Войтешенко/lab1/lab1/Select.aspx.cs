@@ -31,6 +31,7 @@ namespace lab1
                     CommandType = System.Data.CommandType.StoredProcedure
                 };
                 OleDbDataReader reader = cmd.ExecuteReader();
+                
 
 
                 DisplayTable.Width = Unit.Percentage(90.00);
